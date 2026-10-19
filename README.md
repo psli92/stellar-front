@@ -1,4 +1,4 @@
-# Stellar Front — 0.0.3
+# Stellar Front — 0.0.4
 
 Socle statique HTML/CSS/JavaScript, servi par Nginx. La connexion par mot de passe est disponible ; les écrans métier restent à porter. Ce dépôt ne contient ni PHP, ni Symfony, ni Redis, ni compte technique.
 
@@ -11,7 +11,7 @@ Le DNS Docker du routeur est résolu à nouveau après remplacement de son conte
 
 ## Installation
 
-1. Déployer SK puis Stellar 0.0.24, avec son compte technique configuré côté serveur.
+1. Déployer SK puis Stellar 0.0.25, avec son compte technique configuré côté serveur.
 2. Depuis Stellar, importer `migration/014-public-bootstrap` suivant son README.
 3. Ici, copier `.env.example` vers `.env` et sélectionner PROJECT_CODE/sca, le réseau et le port.
 4. `sh scripts/setup-front.sh` (ou `sh scripts/setup-front.sh sca-network`).
@@ -67,3 +67,16 @@ efface la session locale, sans annoncer de révocation globale côté SK.
 Pas de remember-me, refresh, changement de mot de passe, mot de passe oublié ni connexion par code
 dans cette étape. Les réponses must_change_password/MFA ne créent pas de session connectée.
 Les contrôles historiques non raccordés ne sont pas affichés comme de fausses actions.
+
+## Dashboard — 0.0.4
+
+Déployer Stellar 0.0.25 avant ce front. Aucun import SK supplémentaire.
+GET /{language}/dashboard fournit les quatre listes et context.clientContext (source de vérité).
+PUT /{language}/clients/{id}/switch mémorise le client côté serveur, puis le dashboard est rechargé.
+Les one-shots restent personnels comme dans le front historique. Les listes ne sont jamais mises en cache.
+Le changement de client est sérialisé ; les anciennes réponses et données sont écartées pendant la transition.
+Au retour dans l'onglet, le dashboard est relu pour reprendre une sélection faite ailleurs.
+Le backend reste seul responsable des droits ; 401 ferme la session locale, 403/CGU affiche le refus.
+Les liens ouvrent une lecture simple via les API métier, sans prétendre remplacer les écrans d'édition à venir.
+La page de connexion reprend les arrondis et deux accès secondaires historiques ; ceux-ci annoncent
+explicitement que leurs parcours ne sont pas encore portés. Aucun appel factice n'est envoyé.

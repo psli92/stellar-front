@@ -1,3 +1,4 @@
+import {dashboard} from './dashboard.mjs';
 import {loadBootstrap} from './bootstrap.mjs';
 import {login, readSession, clearSession} from './auth.mjs';
 
@@ -11,20 +12,19 @@ const retry = byId('retry');
 let storage;
 try { storage = window.sessionStorage; } catch { /* Memory-only login when storage is disabled. */ }
 const client = new URLSearchParams(location.search).get('client') || '';
-let generation = 0, busy = false, ready = false, active = null, expiryTimer;
+let generation = 0, busy = false, ready = false, active = null, expiryTimer, publicLabels = {};
+const dashboardView = dashboard(byId('dashboard'), {onClose: closeSession, onExpired: message => {closeSession();showError(message);}, onSession: session => {active=session;try{storage?.setItem('stellar:user-session:v1',JSON.stringify(session));}catch{}}});
 function showError(message) { error.textContent = message; error.hidden = !message; }
 function closeSession() {
   clearInterval(expiryTimer); clearSession(storage); active = null;
-  byId('connected').hidden = true; byId('login-section').hidden = false;
+  dashboardView.hide(); byId('login-layout').hidden=false; byId('connected').hidden = true; byId('login-section').hidden = false;history.replaceState(null,'','/');
   byId('password').value = ''; byId('username').focus();
 }
 function connected(session) {
   active = session;
   byId('password').value = '';
-  byId('login-section').hidden = true; byId('connected').hidden = false;
-  byId('identity').textContent = [session.firstname, session.lastname].filter(Boolean).join(' ');
-  byId('current-client').textContent = session.extra?.clientContext?.current?.name || '';
-  byId('connected-title').focus();
+  byId('login-layout').hidden=true;history.replaceState(null,'','/dashboard'+location.search);
+  dashboardView.show(session,select.value,publicLabels);
   clearInterval(expiryTimer);
   // Recheck periodically, including after the tab resumes; no automatic refresh in this phase.
   expiryTimer = setInterval(() => {
@@ -39,6 +39,7 @@ async function start(force = false) {
   try {
     const data = await loadBootstrap({language: select.value, client, storage, force});
     if (run !== generation) return;
+    publicLabels = data.labels;
     document.documentElement.lang = data.language.toLowerCase();
     document.title = data.labels.LoginPageTitle || 'Connexion · Stellar';
     document.querySelectorAll('[data-label]').forEach(node => {
@@ -64,12 +65,7 @@ form.addEventListener('submit', async event => {
   } catch (failure) { showError(failure.message); status.textContent = ''; byId('password').focus(); }
   finally { byId('password').value = ''; busy = false; submit.disabled = !ready; select.disabled = false; form.removeAttribute('aria-busy'); }
 });
-byId('show-password').addEventListener('click', () => {
-  const visible = byId('password').type === 'password'; byId('password').type = visible ? 'text' : 'password';
-  byId('show-password').textContent = visible ? 'Masquer' : 'Voir';
-  byId('show-password').setAttribute('aria-pressed', String(visible));
-  byId('show-password').setAttribute('aria-label', visible ? 'Masquer le mot de passe' : 'Afficher le mot de passe');
-});
+document.querySelectorAll('[data-pending]').forEach(button=>button.addEventListener('click',()=>byId('pending-dialog').showModal()));
 byId('logout').addEventListener('click', closeSession);
 select.addEventListener('change', () => start());
 retry.addEventListener('click', () => start(true));

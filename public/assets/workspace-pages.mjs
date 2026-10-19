@@ -65,6 +65,10 @@ export function renderWorkspace(content,page,options){
  if(kind==='projects'&&!list){action(text('actionEditProject','Modifier le projet'),'ProjectUpdate',data);if(forms.ActivityUpdate){const a=node('a','btn btn-primary');a.append(icon('plus'),document.createTextNode(text('actionAddActivity','Nouvelle activité')));a.href='/portfolios/'+data.portfolio.id+'/projects/'+data.id+'/activity/form';a.addEventListener('click',e=>{e.preventDefault();navigate(a.pathname);});actions.append(a);}}
  if(kind==='activities'&&!list)action(text('actionEditActivity','Modifier l’activité'),'ActivityUpdate',data);
  if(actions.childNodes.length)content.querySelector('.sk-page-head').append(actions);
- if(kind==='activities'&&!list)enhanceActivity(content,page,options);
+ if(kind==='activities'&&!list){
+  const meta=content.querySelector('.sk-page-head__meta');meta.replaceChildren(document.createTextNode([data.project?.name,parent?.name,formatDate(data.date,language)].filter(Boolean).join(' · ')));
+  if(data.workingLanguage){const badge=node('span','sk-badge sk-badge--neutral');badge.append(icon('language'),document.createTextNode(text('ActivityForm.workingLanguage.label','Langue')+' : '+data.workingLanguage.toUpperCase()));meta.append(document.createTextNode(' · '),badge);}
+  enhanceActivity(content,page,options);
+ }
  return {browserTitle,title,crumbs};
 }

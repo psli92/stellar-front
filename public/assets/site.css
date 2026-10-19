@@ -68,3 +68,6 @@ button.login-inline-link{border:0;background:none;padding:0}
 .stellar-table-icon-heading{font-size:0!important;width:44px}
 
 .contribution-title-dialog{width:min(500px,calc(100% - 32px))}
+
+.history-row-clickable { cursor: pointer; }
+.sk-table tbody tr:focus-within .sk-table__actions .btn { opacity: 1; }

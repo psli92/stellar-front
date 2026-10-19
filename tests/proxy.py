@@ -40,6 +40,12 @@ with tempfile.TemporaryDirectory() as temp:
         assert get(port,'/')[0]==200
         assert get(port,'/future/page')[0]==200
         assert get(port,'/assets/missing.js')[0]==404
+        assert get(port,'/assets/missing.mjs')[0]==404
+        for module in ['main.mjs', 'bootstrap.mjs']:
+            status,body,headers=get(port,'/assets/'+module)
+            assert status==200 and headers['Content-Type'].split(';')[0]=='text/javascript'
+            assert headers['X-Content-Type-Options']=='nosniff'
+        assert get(port,'/assets/site.css')[2]['Content-Type'].split(';')[0]=='text/css'
         for path in ['/api/internal/sk/auth/login','/api/_router/routes']:
             assert get(port,path)[0]==404
         status,body,headers=get(port,'/api/FR/public/bootstrap?client=demo')

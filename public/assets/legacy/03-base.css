@@ -93,6 +93,9 @@ h5 { font-size: var(--fs-300); }
 h6 { font-size: var(--fs-200); color: var(--text-secondary); }
 
 p {
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
     margin-block: 0 var(--s-3);
     text-wrap: pretty;
 }

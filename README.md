@@ -1,4 +1,4 @@
-# Stellar Front — 0.0.7
+# Stellar Front — 0.0.8
 
 Socle statique HTML/CSS/JavaScript, servi par Nginx. La connexion par mot de passe est disponible ; le dashboard et la lecture des portfolios sont disponibles. Ce dépôt ne contient ni PHP, ni Symfony, ni Redis, ni compte technique.
 
@@ -137,3 +137,9 @@ Les icônes sont centrées dans leur conteneur sans décalage de ligne de base.
 
 `node tests/workspace-browser.mjs` vérifie les parcours de création/modification, les refus de droits,
 les erreurs d’enregistrement, le client courant, les logos et les libellés avec une API synthétique.
+
+## Typographie — 0.0.8
+
+Rétablissement des règles historiques des paragraphes : taille 1.1em, graisse 300 et interligne 1.7em.
+Les styles propres aux composants restent prioritaires. La police Inter Light du ZIP est embarquée
+pour afficher réellement la graisse 300, sans dépendance externe.

@@ -21,17 +21,17 @@ export function renderPortfolios(content,data,{language,labels={},navigate,openP
  const text=(k,f)=>labels[k]||f;
  const el=(tag,cls,value)=>{const n=document.createElement(tag);if(cls)n.className=cls;if(value!==undefined)n.textContent=value;return n;};
  const list=Array.isArray(data),items=list?data:data.projects;
- const title=list?text('portfolioIndexTitle','Portfolios'):data.name;
+ const title=list?text('portfolioIndexTitle','Portefeuilles'):data.name;
  content.replaceChildren();
  const region=el('div','app-region'),head=el('div','sk-page-head'),main=el('div','sk-page-head__main');
- if(!list)main.append(el('p','sk-page-head__eyebrow',text('portfolio','Portfolio')+(data.client?.name?' · '+data.client.name:'')));
+ if(!list)main.append(el('p','sk-page-head__eyebrow',text('portfolio','Portefeuille')+(data.client?.name?' · '+data.client.name:'')));
  const h1=el('h1','sk-page-head__title',title);h1.tabIndex=-1;
- main.append(h1,el('p','sk-page-head__meta',items.length+' '+text(list?(items.length>1?'portfolios':'portfolio'):(items.length>1?'projects':'project'),list?(items.length>1?'portfolios':'portfolio'):(items.length>1?'projets':'projet'))));head.append(main);region.append(head);content.append(region);
+ main.append(h1,el('p','sk-page-head__meta',items.length+' '+text(list?(items.length>1?'portfolios':'portfolio'):(items.length>1?'projects':'project'),list?(items.length>1?'portefeuilles':'portefeuille'):(items.length>1?'projets':'projet'))));head.append(main);region.append(head);content.append(region);
  const body=el('div','app-region');const section=el('section');
  if(!list){const heading=el('h2','sk-section-title',text('projectsLabel','Projets'));heading.id='portfolio-projects';section.setAttribute('aria-labelledby',heading.id);section.append(heading);}
- if(!items.length){const empty=el('div','sk-empty');empty.append(icon('folder-open','sk-empty__icon'),el('p','fw-semibold mb-0',text(list?'portfolioIndexEmptyTitle':'projectIndexEmptyTitle',list?'Aucun portfolio':'Aucun projet')),el('p','mb-0',text(list?'portfolioIndexEmpty':'portfolioDetailProjectsEmpty',list?'Aucun portfolio à afficher pour le client courant.':'Ce portfolio ne contient pas encore de projet.')));section.append(empty);}
+ if(!items.length){const empty=el('div','sk-empty');empty.append(icon('folder-open','sk-empty__icon'),el('p','fw-semibold mb-0',text(list?'portfolioIndexEmptyTitle':'projectIndexEmptyTitle',list?'Aucun portefeuille':'Aucun projet')),el('p','mb-0',text(list?'portfolioIndexEmpty':'portfolioDetailProjectsEmpty',list?'Aucun portefeuille à afficher pour le client courant.':'Ce portefeuille ne contient pas encore de projet.')));section.append(empty);}
  else{const grid=el('div','sk-grid');for(const item of items){
-  const card=el('article','sk-card sk-card--linked');card.append(el('p','sk-card__eyebrow',text(list?'portfolio':'project',list?'Portfolio':'Projet')));
+  const card=el('article','sk-card sk-card--linked');card.append(el('p','sk-card__eyebrow',text(list?'portfolio':'project',list?'Portefeuille':'Projet')));
   const heading=el(list?'h2':'h3','sk-card__title'),link=el('a','sk-card__link',item.name);link.href=(list?'/portfolios/':'/projects/')+item.id;
   link.addEventListener('click',event=>{if(event.button||event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;event.preventDefault();list?navigate(link.pathname):openProject('/projects/'+item.id,item.name);});heading.append(link);card.append(heading);
   if(!list&&item.portfolio?.name)card.append(el('p','sk-card__body',item.portfolio.name));

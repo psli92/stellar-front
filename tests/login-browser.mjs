@@ -14,6 +14,7 @@ const context=()=>({canSwitch:true,current:clients.find(c=>c.id===current),clien
 const server=createServer(async(req,res)=>{
  const url=new URL(req.url,'http://localhost');const requestedLanguage=url.pathname.includes('/EN/')?'EN':'FR';url.pathname=url.pathname.replace('/EN/','/FR/');
  if(url.pathname==='/api/v1/FR/assets/11111111-1111-1111-1111-111111111111'){assert.equal(req.headers.authorization,'Bearer '+token);res.setHeader('Content-Type','image/svg+xml');res.end('<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"><circle cx="14" cy="14" r="12" fill="blue"/></svg>');return;}
+ if(url.pathname.startsWith('/api/FR/forms/')){res.writeHead(403,{'Content-Type':'application/json'});res.end(JSON.stringify({code:403}));return;}
  if(url.pathname==='/api/FR/public/bootstrap'){res.setHeader('Content-Type','application/json');res.end(JSON.stringify({code:0,data:{...bootstrap,language:requestedLanguage}}));return;}
  if(url.pathname==='/api/FR/dashboard'){
   assert.equal(req.headers.authorization,'Bearer '+token);res.setHeader('Content-Type','application/json');
@@ -66,12 +67,12 @@ try{
  await page.getByText('Portfolio 2',{exact:true}).click();await page.locator('#portfolio-page h1').waitFor();assert.equal(new URL(page.url()).pathname,'/portfolios/2');assert.equal(await page.locator('#portfolio-page h1').innerText(),'Portfolio 2');await page.getByText('Project',{exact:true}).waitFor();
  if(process.env.PORTFOLIO_SCREENSHOT)await page.screenshot({path:process.env.PORTFOLIO_SCREENSHOT,fullPage:true});
  await page.reload();await page.locator('#portfolio-page h1').waitFor();assert.equal(new URL(page.url()).pathname,'/portfolios/2');
- await page.locator('.app-breadcrumb a[href="/portfolios"]').click();await page.locator('#portfolio-page .sk-card').waitFor();assert.equal(await page.locator('#portfolio-page .sk-card__footer').innerText(),'1 projet · 0 activité');
+ await page.locator('.app-brand').click();await page.getByRole('link',{name:'Voir tous',exact:true}).click();await page.locator('#portfolio-page .sk-card').waitFor();assert.equal(await page.locator('#portfolio-page .sk-card__footer').innerText(),'1 projet · 0 activité');
  if(process.env.PORTFOLIO_SCREENSHOT)await page.screenshot({path:process.env.PORTFOLIO_SCREENSHOT.replace('.png','-list.png'),fullPage:true});
- await page.goBack();await page.locator('#portfolio-page h1').waitFor();assert.equal(await page.locator('#portfolio-page h1').innerText(),'Portfolio 2');
- await page.locator('#client-trigger').click();await page.locator('[data-client-id="1"]').click();await page.getByText('Portfolio 1',{exact:true}).waitFor();assert.equal(new URL(page.url()).pathname,'/portfolios');assert.equal(await page.getByText('Portfolio 2',{exact:true}).count(),0);
+ await page.getByText('Portfolio 2',{exact:true}).click();await page.locator('#portfolio-page h1').waitFor();
+ await page.locator('#client-trigger').click();await page.locator('[data-client-id="1"]').click();await page.getByText('Portfolio 1',{exact:true}).waitFor();assert.equal(new URL(page.url()).pathname,'/dashboard');assert.equal(await page.getByText('Portfolio 2',{exact:true}).count(),0);
  await page.locator('#client-trigger').click();await page.locator('[data-client-id="2"]').click();await page.getByText('Portfolio 2',{exact:true}).waitFor();
- await page.setViewportSize({width:390,height:844});await page.reload();await page.locator('#portfolio-page .sk-card').waitFor();assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+ await page.getByRole('link',{name:'Voir tous',exact:true}).click();await page.locator('#portfolio-page h1').waitFor();await page.setViewportSize({width:390,height:844});await page.reload();await page.locator('#portfolio-page .sk-card').waitFor();assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
  portfolioState='empty';await page.reload();await page.locator('#portfolio-page .sk-empty').waitFor();
  portfolioState='denied';await page.reload();await page.locator('#dashboard-error').waitFor({state:'visible'});assert.equal(await page.locator('#portfolio-page .sk-card').count(),0);
  portfolioState='normal';await page.setViewportSize({width:1440,height:900});if(await page.locator('.app-sidebar.is-collapsed').count())await page.locator('.app-sidebar__toggle').click();await page.locator('.app-brand').click();

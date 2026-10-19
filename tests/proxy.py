@@ -41,7 +41,7 @@ with tempfile.TemporaryDirectory() as temp:
         assert get(port,'/future/page')[0]==200
         assert get(port,'/assets/missing.js')[0]==404
         assert get(port,'/assets/missing.mjs')[0]==404
-        for module in ['main.mjs', 'bootstrap.mjs', 'auth.mjs', 'dashboard.mjs', 'dashboard-api.mjs', 'portfolios.mjs', 'icons.mjs', 'client-logos.mjs']:
+        for module in ['main.mjs', 'bootstrap.mjs', 'auth.mjs', 'dashboard.mjs', 'dashboard-api.mjs', 'portfolios.mjs', 'icons.mjs', 'client-logos.mjs', 'workspace-pages.mjs', 'workspace-forms.mjs', 'workspace-labels.mjs', 'activity-wizard.mjs']:
             status,body,headers=get(port,'/assets/'+module)
             assert status==200 and headers['Content-Type'].split(';')[0]=='text/javascript'
             assert headers['X-Content-Type-Options']=='nosniff'

@@ -1,3 +1,4 @@
+import {workspacePath} from './workspace-pages.mjs';
 import {dashboard} from './dashboard.mjs';
 import {loadBootstrap} from './bootstrap.mjs';
 import {login, readSession, clearSession} from './auth.mjs';
@@ -29,7 +30,7 @@ function closeSession() {
 function connected(session) {
   active = session;
   byId('password').value = '';
-  byId('login-layout').hidden=true;if(!/^\/portfolios(?:\/[1-9]\d*)?$/.test(location.pathname))history.replaceState(null,'','/dashboard'+location.search);
+  byId('login-layout').hidden=true;if(!workspacePath(location.pathname))history.replaceState(null,'','/dashboard'+location.search);
   dashboardView.show(session,select.value,publicLabels,availableLanguages);
   clearInterval(expiryTimer);
   // Recheck periodically, including after the tab resumes; no automatic refresh in this phase.

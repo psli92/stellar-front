@@ -1,12 +1,12 @@
 export class ApiError extends Error { constructor(message,status=0,code=''){super(message);this.status=status;this.code=String(code);} }
-export async function callApi(session,language,path,{method='GET',signal,fetcher=fetch}={}) {
+export async function callApi(session,language,path,{method='GET',signal,fetcher=fetch,json,query}={}) {
  if(!/^[A-Za-z]{2,3}$/.test(language)||!/^\/[a-z0-9/-]+$/i.test(path))throw new ApiError('Requête invalide.');
  const timeout=AbortSignal.timeout(20000);const combined=signal?AbortSignal.any([signal,timeout]):timeout;
  let response,body;
- try{response=await fetcher('/api/'+language.toUpperCase()+path,{method,headers:{Accept:'application/json',Authorization:'Bearer '+session.token},credentials:'omit',cache:'no-store',signal:combined});body=await response.json();}
+ try{response=await fetcher('/api/'+language.toUpperCase()+path+(query?'?'+new URLSearchParams(query):''),{method,headers:{Accept:'application/json',Authorization:'Bearer '+session.token,...(json===undefined?{}:{'Content-Type':'application/json'})},...(json===undefined?{}:{body:JSON.stringify(json)}),credentials:'omit',cache:'no-store',signal:combined});body=await response.json();}
  catch(error){if(signal?.aborted)throw error;throw new ApiError('Le service est momentanément indisponible.');}
  if(!response.ok||String(body.code)!=='0'){
-  const message=response.status===401?'Votre session a expiré.':String(body.code)==='-3000'?'Veuillez accepter les conditions générales sur le front actuel avant de continuer.':response.status===403?'Vous ne disposez pas des droits nécessaires.':'Impossible de charger ces données. Réessayez.';
+  const message=response.status===401?'Votre session a expiré.':String(body.code)==='-3000'?'Veuillez accepter les conditions générales sur le front actuel avant de continuer.':response.status===403?'Vous ne disposez pas des droits nécessaires.':response.status===409?'Un élément porte déjà ce nom.':method!=='GET'?'Enregistrement refusé. Vérifiez les champs et vos droits.':'Impossible de charger ces données. Réessayez.';
   throw new ApiError(message,response.status,body.code);
  }
  return body;

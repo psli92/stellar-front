@@ -1,4 +1,4 @@
-# Stellar Front — 0.0.6
+# Stellar Front — 0.0.7
 
 Socle statique HTML/CSS/JavaScript, servi par Nginx. La connexion par mot de passe est disponible ; le dashboard et la lecture des portfolios sont disponibles. Ce dépôt ne contient ni PHP, ni Symfony, ni Redis, ni compte technique.
 
@@ -120,3 +120,20 @@ Les initiales restent le repli en l’absence de logo ou de droit de lecture.
 Configurer SK_API_ROOT dans .env avec le même préfixe que Stellar/SK (v1 par défaut, par exemple vA
 si c’est le préfixe de votre installation), puis reconstruire le front avec setup-front.sh.
 Aucun compte de service ni jeton dans une URL d’image.
+
+## Portefeuilles, projets et activités — 0.0.7
+
+Liste et lecture des projets et activités, création de portefeuilles/projets, modification du contexte
+d’un portefeuille et d’un projet. Les activités se créent avec les quatre étapes du formulaire historique
+et se modifient depuis leur détail. Les contributions et traitements IA restent à l’étape suivante.
+Les actions utilisent les AutoForms et les droits de l’API existante ; les corps envoyés respectent ses schémas stricts.
+Aucun nouvel import SK n’est nécessaire si les migrations Stellar existantes sont déjà installées.
+
+Le changement de client revient au dashboard. Les logos décodés sont réutilisés pendant la session
+pour éviter le clignotement. Les libellés labelFO et profiles sont lus via l’API avec le JWT utilisateur
+et gardés en mémoire cinq minutes, par utilisateur et langue, puis effacés à la déconnexion.
+Le profil affiché utilise la valeur de settings/profiles, jamais sa clé technique.
+Les icônes sont centrées dans leur conteneur sans décalage de ligne de base.
+
+`node tests/workspace-browser.mjs` vérifie les parcours de création/modification, les refus de droits,
+les erreurs d’enregistrement, le client courant, les logos et les libellés avec une API synthétique.

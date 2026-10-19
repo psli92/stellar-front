@@ -1,7 +1,6 @@
-# Stellar Front — 0.0.2
+# Stellar Front — 0.0.3
 
-Socle statique HTML/CSS/JavaScript, servi par Nginx. Les écrans métier et la connexion ne sont
-pas encore portés. Ce dépôt ne contient ni PHP, ni Symfony, ni Redis, ni compte technique.
+Socle statique HTML/CSS/JavaScript, servi par Nginx. La connexion par mot de passe est disponible ; les écrans métier restent à porter. Ce dépôt ne contient ni PHP, ni Symfony, ni Redis, ni compte technique.
 
 Navigateur → `${PROJECT_CODE}-web` : `/` sert les fichiers ; `/api/…` relaie vers `sk-route:80`
 en retirant **uniquement** `/api/`. Exemples : `/api/FR/public/bootstrap` → `/FR/public/bootstrap`,
@@ -42,9 +41,29 @@ jamais le workspace d'un utilisateur et ne donne aucun droit.
 Le bootstrap seul est stocké dans sessionStorage (par origine, langue, client), au maximum cinq minutes.
 Un échec de stockage n'empêche pas l'utilisation. Après expiration, le contenu est rechargé et sa révision
 actualisée. Il ne s'agit pas d'un cache des réponses métier. Aucun token n'est enregistré dans ce cache.
-L'authentification utilisateur et le refresh feront l'objet des prochaines étapes.
+Le refresh fera l'objet d'une prochaine étape.
 
 ## Vérifications
 
-`node --test tests/bootstrap.test.mjs` ; `python tests/proxy.py` vérifie le proxy réel avec Docker.
+`node --test tests/*.test.mjs` ; `python tests/proxy.py` vérifie le proxy réel avec Docker.
 La CI exécute les deux ; le test proxy n'a besoin ni de SK, ni d'un compte, ni de données métier.
+`node tests/login-browser.mjs` teste le formulaire avec Playwright et une API locale synthétique
+(installer Playwright et Chromium, ou définir PLAYWRIGHT_MODULE/BROWSER_EXECUTABLE).
+
+## Connexion — 0.0.3
+
+La page reprend le layout, les couleurs, la police Inter et le logo du frontend historique fourni.
+Le formulaire appelle `/api/{language}/login_check` (alias Stellar existant) avec username/password.
+Aucun nouvel import SK n'est nécessaire. Le scope app reste implicite. Le compte technique ne quitte pas Stellar.
+
+La réponse raw est vérifiée avant de conserver le JWT utilisateur, son profil et son contexte dans
+sessionStorage, limité à l'onglet. Le mot de passe et le refresh_token ne sont jamais enregistrés.
+Si le stockage est refusé, la session reste uniquement en mémoire. Le cache public du bootstrap reste séparé.
+La date exp du JWT sert uniquement à masquer une session expirée ; elle ne prouve aucun droit côté API.
+
+Après succès, un écran confirme l'identité et le client courant. Il ne simule pas un dashboard ou
+un consentement CGU : les écrans métier viendront ensuite. « Fermer la session sur cet onglet »
+efface la session locale, sans annoncer de révocation globale côté SK.
+Pas de remember-me, refresh, changement de mot de passe, mot de passe oublié ni connexion par code
+dans cette étape. Les réponses must_change_password/MFA ne créent pas de session connectée.
+Les contrôles historiques non raccordés ne sont pas affichés comme de fausses actions.

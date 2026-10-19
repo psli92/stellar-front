@@ -950,5 +950,53 @@
   "synthesis": [
     "Synthèse",
     0
+  ],
+  "SynthesisError": [
+    "Erreur lors de la génération de la synthèse. Veuillez réessayer.",
+    0
+  ],
+  "SynthesisFormatLabel": [
+    "Format",
+    0
+  ],
+  "SynthesisIntentLabel": [
+    "Intention",
+    0
+  ],
+  "SynthesisLengthLabel": [
+    "Longueur",
+    0
+  ],
+  "SynthesisSelectionRequired": [
+    "Renseignez les trois paramètres (Format, Longueur, Intention) avant de lancer la génération.",
+    0
+  ],
+  "SynthesisSuccess": [
+    "Synthèse génerée avec succès",
+    0
+  ],
+  "SynthesisVolumetryEmpty": [
+    "Sélectionnez un format et une longueur pour afficher la volumétrie.",
+    0
+  ],
+  "SynthesisVolumetryLabel": [
+    "Volumétrie indicative",
+    0
+  ],
+  "SynthesisVolumetryUnit": [
+    "mots",
+    0
+  ],
+  "format": [
+    "Format",
+    0
+  ],
+  "intent": [
+    "Intention",
+    0
+  ],
+  "length": [
+    "Longueur",
+    0
   ]
 }

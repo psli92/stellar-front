@@ -36,7 +36,7 @@ export function renderWorkspace(content,page,options){
  const parent=kind==='projects'?data.portfolio:kind==='activities'?data.project?.portfolio:null;
  if(parent)crumbs.push(['/portfolios/'+parent.id,parent.name]);
  if(kind==='activities'&&data.project)crumbs.push(['/projects/'+data.project.id,data.project.name]);
- if(page.special){content.replaceChildren();crumbs.push(['/activities/'+data.id,data.name]);if(page.mode==='axis')renderAxis(content,page,options);else renderNarrative(content,page,options);return {browserTitle,title:page.mode==='axis'?text('Axis.'+page.axis.name+'.title',page.axis.name):text('labelAnalyseSynthesise','Analyser et synthétiser'),crumbs};}
+ if(page.special){content.replaceChildren();crumbs.push(['/activities/'+data.id,data.name]);if(page.mode==='axis')renderAxis(content,page,options);else renderNarrative(content,page,options);return {browserTitle,title:page.mode==='axis'?text('Axis.'+page.axis.name+'.title',page.axis.name):text(page.mode==='history'?'HistoryBreadcrumb':'labelAnalyseSynthesise','Analyser et synthétiser'),crumbs};}
  if(wizard){content.replaceChildren();activityWizard(content,{...page,project:data,language,labels,session,signal,onSaving,onSaved:()=>onSaved('/projects/'+data.id),onExpired});crumbs.push(['/projects/'+data.id,data.name]);return {browserTitle,title:text('NewActivityTitle','Nouvelle activité'),crumbs};}
  const list=Array.isArray(data);
  let title;

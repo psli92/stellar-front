@@ -1,4 +1,4 @@
-# Stellar Front — 0.0.14
+# Stellar Front — 0.0.15
 
 Socle statique HTML/CSS/JavaScript, servi par Nginx. La connexion par mot de passe est disponible ; le dashboard et la lecture des portfolios sont disponibles. Ce dépôt ne contient ni PHP, ni Symfony, ni Redis, ni compte technique.
 
@@ -182,3 +182,15 @@ Validation locale : `node --test tests/*.test.mjs`, `node tests/activity-browser
 `node tests/workspace-browser.mjs`, `node tests/login-browser.mjs` avec Playwright/Edge.
 Le test activité emploie une API, des fichiers et un microphone simulés ; il ne consomme pas
 le MaaS et n’écrit aucune donnée sur les environnements déployés. Le proxy Docker est testé en CI.
+
+## Fidélité des écrans axe et narratif — 0.0.15
+
+Structure des régions et défilement alignés sur les templates historiques : capture, lecteur,
+états vides, table de sélection et filtres de groupes. Les titres de contributions remplacent
+les extraits dans la sélection. Paramètres : libellés, champs requis, aides, placeholders,
+compteur de contexte et encadré de volumétrie du ZIP. Résultats : actions de l’en-tête,
+indicateurs, panneaux narratif/analyse, copie des sections repliées et retour en haut.
+La régénération revient aux paramètres sans déclencher de traitement automatiquement.
+
+Tests sur API simulée, avec captures des écrans axe, sélection, paramètres et résultats.
+Aucun changement de contrat API, de droits ou d’import SK.

@@ -71,3 +71,6 @@ button.login-inline-link{border:0;background:none;padding:0}
 
 .history-row-clickable { cursor: pointer; }
 .sk-table tbody tr:focus-within .sk-table__actions .btn { opacity: 1; }
+
+#portfolio-page:has(.sk-split),#portfolio-page:has(#narrative-result){display:flex;flex-direction:column;flex:1 1 auto;min-height:0}
+.stellar-editor-content:empty::before{content:attr(data-placeholder);color:var(--text-tertiary);pointer-events:none}

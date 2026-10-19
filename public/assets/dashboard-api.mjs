@@ -1,6 +1,6 @@
 export class ApiError extends Error { constructor(message,status=0,code=''){super(message);this.status=status;this.code=String(code);} }
 export async function callApi(session,language,path,{method='GET',signal,fetcher=fetch,json,query,formData,timeoutMs=20000,serverMessage=false}={}) {
- if(!/^[A-Za-z]{2,3}$/.test(language)||!/^\/[a-z0-9/-]+$/i.test(path))throw new ApiError('Requête invalide.');
+ if(!/^[A-Za-z]{2,3}$/.test(language)||!/^\/[a-z0-9/_-]+$/i.test(path))throw new ApiError('Requête invalide.');
  const timeout=AbortSignal.timeout(timeoutMs);const combined=signal?AbortSignal.any([signal,timeout]):timeout;
  let response,body;
  try{response=await fetcher('/api/'+language.toUpperCase()+path+(query?'?'+new URLSearchParams(query):''),{method,headers:{Accept:'application/json',Authorization:'Bearer '+session.token,...(json===undefined?{}:{'Content-Type':'application/json'})},...(json===undefined?{}:{body:JSON.stringify(json)}),...(formData?{body:formData}:{}),credentials:'omit',cache:'no-store',signal:combined});body=await response.json();}

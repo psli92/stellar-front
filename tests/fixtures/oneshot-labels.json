@@ -1,0 +1,3250 @@
+{
+  "-11": [
+    "Accès en lecture seule !",
+    0
+  ],
+  "-6": [
+    "Votre compte n'est pas autorisé à accéder à cette plateforme.",
+    0
+  ],
+  "-4": [
+    "Votre session a expiré !",
+    0
+  ],
+  "ActivityForm.date.help": [
+    "La date est indicative et permet de distinguer plusieurs activités similaires.",
+    0
+  ],
+  "ActivityForm.date.label": [
+    "Date indicative",
+    0
+  ],
+  "ActivityForm.description.label": [
+    "Description de l'activité",
+    0
+  ],
+  "ActivityForm.description.placeholder": [
+    "Description de l'activité",
+    0
+  ],
+  "ActivityForm.generalContext.label": [
+    "Contexte IA",
+    0
+  ],
+  "ActivityForm.generalContext.placeholder": [
+    "Contexte IA",
+    0
+  ],
+  "ActivityForm.name.label": [
+    "Nom de l'activité",
+    0
+  ],
+  "ActivityForm.name.placeholder": [
+    "ex: Narratif de transformation — Séminaire Comex",
+    0
+  ],
+  "ActivityForm.objectives.help": [
+    "Ce contexte sera utilisé par l'IA lors de la génération des synthèses.",
+    0
+  ],
+  "ActivityForm.objectives.label": [
+    "Contexte / Input spécifiques",
+    0
+  ],
+  "ActivityForm.objectives.placeholder": [
+    "Collez ici le contexte spécifique de cette activité : participants, enjeux particuliers, questions clés...",
+    0
+  ],
+  "ActivityForm.project.label": [
+    "Projet de rattachement",
+    0
+  ],
+  "ActivityForm.project.placeholder": [
+    "Choisissez un projet",
+    0
+  ],
+  "ActivityForm.target.label": [
+    "Cible du narratif produit",
+    0
+  ],
+  "ActivityForm.target.placeholder": [
+    "Cible du narratif produit",
+    0
+  ],
+  "ActivityForm.vigilancePoints.label": [
+    "Points de vigilance",
+    0
+  ],
+  "ActivityForm.vigilancePoints.placeholder": [
+    "Points de vigilance",
+    0
+  ],
+  "ActivityForm.workingLanguage.help": [
+    "Toutes les productions IA de cette activité seront générées dans cette langue, quelle que soit la langue des contributions. Ce choix est définitif.",
+    0
+  ],
+  "ActivityForm.workingLanguage.label": [
+    "Langue de travail",
+    0
+  ],
+  "ActivityForm.workingLanguage.placeholder": [
+    "Choisissez une langue",
+    0
+  ],
+  "ActivityInformationsTitle": [
+    "Informations",
+    0
+  ],
+  "ActivityType.AmbitionLevel.description": [
+    "L'agent qui fixe le cap et le rythme. Il formule les résultats attendus, la cible idéale et les étapes intermédiaires avec leurs jalons.",
+    0
+  ],
+  "ActivityType.AmbitionLevel.title": [
+    "Niveau d'ambition",
+    0
+  ],
+  "ActivityType.ImpactAnalysis.description": [
+    "L'agent qui cartographie ce que votre transformation change vraiment. Il identifie les populations concernées, les impacts métiers et les leviers d'adoption, pour agir là où cela compte.",
+    0
+  ],
+  "ActivityType.ImpactAnalysis.title": [
+    "Analyse d'impacts",
+    0
+  ],
+  "ActivityType.PerceptionDiagnostic.description": [
+    "L'agent qui prend le pouls de votre organisation. Il analyse en continu les ressentis, les irritants et les signaux fiables, pour que vous écoutiez vraiment le terrain.",
+    0
+  ],
+  "ActivityType.PerceptionDiagnostic.title": [
+    "Diagnostic de perception",
+    0
+  ],
+  "ActivityType.TransformationNarrative.description": [
+    "Captez la parole d'un groupe, structurez-la par axes (Pourquoi / Quoi / Comment) et produisez un narratif de transformation fluide et engageant.",
+    0
+  ],
+  "ActivityType.TransformationNarrative.title": [
+    "Narratif de transformation",
+    0
+  ],
+  "ActivityTypeSeeMethod": [
+    "Voir la fiche méthode",
+    0
+  ],
+  "ActivityTypeTitle": [
+    "Type d'activité",
+    0
+  ],
+  "ActivityTypeUnavailableTooltip": [
+    "Cette fonctionnalité sera disponible dans une prochaine version",
+    0
+  ],
+  "AllTagsLabel": [
+    "Tous les tags",
+    0
+  ],
+  "AnalyseAxisHow": [
+    "Comment",
+    0
+  ],
+  "AnalyseAxisWhat": [
+    "Quoi",
+    0
+  ],
+  "AnalyseAxisWhy": [
+    "Pourquoi",
+    0
+  ],
+  "AnalyseCheckAll": [
+    "Tout cocher",
+    0
+  ],
+  "AnalyseCheckNone": [
+    "Tout décocher",
+    0
+  ],
+  "AnalyseEmptyAll": [
+    "Aucune source disponible pour le moment.",
+    0
+  ],
+  "AnalyseEmptyFilter": [
+    "Aucune contribution n'est disponible pour le moment.",
+    0
+  ],
+  "AnalyseFilterAllAxes": [
+    "Tous les axes",
+    0
+  ],
+  "AnalyseFilterFavorites": [
+    "Favoris",
+    0
+  ],
+  "AnalyseFilterHowAxis": [
+    "Axe Comment",
+    0
+  ],
+  "AnalyseFilterValidatedOnly": [
+    "Validés uniquement",
+    0
+  ],
+  "AnalyseFilterWhatAxis": [
+    "Axe Quoi",
+    0
+  ],
+  "AnalyseFilterWhyAxis": [
+    "Axe Pourquoi",
+    0
+  ],
+  "AnalyseGoToParameters": [
+    "Paramétrer le narratif",
+    0
+  ],
+  "AnalyseListAxisColumn": [
+    "Axe",
+    0
+  ],
+  "AnalyseListContributionColumn": [
+    "Contribution",
+    0
+  ],
+  "AnalyseListDateColumn": [
+    "Date",
+    0
+  ],
+  "AnalyseListGroupColumn": [
+    "Groupe",
+    0
+  ],
+  "AnalyseListStatusColumn": [
+    "Statut",
+    0
+  ],
+  "AnalyseListTypeColumn": [
+    "Type",
+    0
+  ],
+  "AnalyseListVersionColumn": [
+    "Version",
+    0
+  ],
+  "AnalyseNbSelected": [
+    "étiquette(s) sélectionnée(s)",
+    0
+  ],
+  "AnalyseNoContributionAccess": [
+    "Cette activité ne contient aucune contribution : l'écran de synthèse n'est pas accessible.",
+    0
+  ],
+  "AnalysePageSubtitle": [
+    "Sélectionnez les contributions à inclure dans le narratif.",
+    0
+  ],
+  "AnalysePageTitle": [
+    "Analyse des contributions",
+    0
+  ],
+  "AnalysePreview": [
+    "Voir l’aperçu",
+    0
+  ],
+  "AnalysePreviewClose": [
+    "Fermer",
+    0
+  ],
+  "AnalysePreviewEmpty": [
+    "Cette contribution ne contient aucun texte.",
+    0
+  ],
+  "AnalysePreviewTooltip": [
+    "Voir un aperçu",
+    0
+  ],
+  "AnalyseSelectContribution": [
+    "Sélectionner",
+    0
+  ],
+  "AnalyseSelectedCount": [
+    "contribution(s) sélectionnée(s)",
+    0
+  ],
+  "AnalyseStatusDraft": [
+    "Brouillon",
+    0
+  ],
+  "AnalyseStatusValidated": [
+    "Validée",
+    0
+  ],
+  "AnalyseTypeSynthesis": [
+    "Synthèse",
+    0
+  ],
+  "AnalyseTypeTranscript": [
+    "Transcript",
+    0
+  ],
+  "AnalyseVisibleCount": [
+    "contribution(s) affichée(s)",
+    0
+  ],
+  "AppTitle": [
+    "Stellar - Cockpit AI",
+    0
+  ],
+  "AssetsAddFolderTooltip": [
+    "Ajouter un dossier",
+    0
+  ],
+  "AssetsDeleteFolderTooltip": [
+    "Supprimer ce dossier",
+    0
+  ],
+  "AssetsDeleteTooltip": [
+    "Supprimer définitivement",
+    0
+  ],
+  "AssetsEditFolderTooltip": [
+    "Renommer le dossier",
+    0
+  ],
+  "AssetsEditTooltip": [
+    "Editer",
+    0
+  ],
+  "AssetsLibraryRoot": [
+    "Médiathèque",
+    0
+  ],
+  "AssetsModalDeleteContent": [
+    "Etes-vous sur de vouloir supprimer définitivement le media %%1%% ?",
+    0
+  ],
+  "AssetsModalDeleteTitle": [
+    "Suppression de media",
+    0
+  ],
+  "AssetsModalEditAltLabel": [
+    "Alt",
+    0
+  ],
+  "AssetsModalEditAltMandatory": [
+    "La valeur est obligatoire.",
+    0
+  ],
+  "AssetsModalEditTitle": [
+    "Modifier le Alt de l'image",
+    0
+  ],
+  "AssetsModalFolderAddLanguage": [
+    "Dossier uniquement disponible en %%1%%",
+    0
+  ],
+  "AssetsModalFolderAddNameLabel": [
+    "Nom du dossier",
+    0
+  ],
+  "AssetsModalFolderAddNameMandatory": [
+    "Le nom est obligatoire.",
+    0
+  ],
+  "AssetsModalFolderAddTitle": [
+    "Ajouter un dossier",
+    0
+  ],
+  "AssetsModalFolderDeleteContent": [
+    "Etes-vous sur de vouloir supprimer le dossier %%1%%, tous les contenus seront rattachés au dossier parent ?",
+    0
+  ],
+  "AssetsModalFolderDeleteTitle": [
+    "Suppression de dossier",
+    0
+  ],
+  "AssetsModalFolderEditNameLabel": [
+    "Nom",
+    0
+  ],
+  "AssetsModalFolderEditNameMandatory": [
+    "Le nom est obligatoire",
+    0
+  ],
+  "AssetsModalFolderEditTitle": [
+    "Renommer un dossier",
+    0
+  ],
+  "AssetsModalUnlinkContent": [
+    "Etes-vous sur de vouloir détacher le media %%1%% du dossier %%2%% ?",
+    0
+  ],
+  "AssetsModalUnlinkTitle": [
+    "Suppression de media",
+    0
+  ],
+  "AssetsPageTitle": [
+    "Bibliothèque de médias",
+    0
+  ],
+  "AssetsUnlinkTooltip": [
+    "Dissocier du dossier",
+    0
+  ],
+  "AudioErrorFallback": [
+    "Echec de la transcription. Le fichier audio a été téléchargé afin que vous puissiez l'ajouter plus tard",
+    0
+  ],
+  "AudioTranscriptSynthesis": [
+    "Audio → Transcript → Synthèse",
+    0
+  ],
+  "Axe": [
+    "Axe",
+    0
+  ],
+  "Axe.How.description": [
+    "La voie de la transformation : comment passer de l'état actuel à l'état souhaité.",
+    0
+  ],
+  "Axe.What.description": [
+    "La vision de la transformation : description de l'état souhaité.",
+    0
+  ],
+  "Axe.Why.description": [
+    "La nécessité de la transformation : raisons profondes et urgence du changement.",
+    0
+  ],
+  "Axis.How.description": [
+    "La voie de la transformation : comment passer de l'état actuel à l'état souhaité.",
+    0
+  ],
+  "Axis.How.title": [
+    "Comment",
+    0
+  ],
+  "Axis.What.description": [
+    "La vision de la transformation : description de l'état souhaité.",
+    0
+  ],
+  "Axis.What.title": [
+    "Quoi",
+    0
+  ],
+  "Axis.Why.description": [
+    "La nécessité de la transformation : raisons profondes et urgence du changement.",
+    0
+  ],
+  "Axis.Why.title": [
+    "Pourquoi",
+    0
+  ],
+  "ClearFilter": [
+    "Effacer le filtre",
+    0
+  ],
+  "ClientSelectorAria": [
+    "Selecteur de client",
+    0
+  ],
+  "ClientSelectorEmpty": [
+    "Aucun client disponible",
+    0
+  ],
+  "ClientSelectorLabel": [
+    "Client",
+    0
+  ],
+  "ClientSelectorLocked": [
+    "Vous etes rattache a ce client",
+    0
+  ],
+  "ClientSelectorSwitchError": [
+    "Impossible de basculer sur ce client",
+    0
+  ],
+  "ComingSoon": [
+    "Bientôt disponible",
+    0
+  ],
+  "ConfirmEnableButton": [
+    "Confirmer mon compte",
+    0
+  ],
+  "ConfirmToken": [
+    "Code de connexion",
+    0
+  ],
+  "ConfirmTokenInformation": [
+    "La saisie de votre code de connexion permettra d'activer votre compte",
+    0
+  ],
+  "ConfirmTokenPageTitle": [
+    "Créer un nouveau mot de passe",
+    0
+  ],
+  "ContribFavoriteToggle": [
+    "Marquer comme favori",
+    0
+  ],
+  "ContribNoTitleError": [
+    "Le titre ne peut etre vide",
+    0
+  ],
+  "ContribSelectCheckbox": [
+    "Sélectionner cette contribution",
+    0
+  ],
+  "ContribUploadNoFile": [
+    "Aucun fichier reçu par le serveur",
+    0
+  ],
+  "ContribUploadSuccess": [
+    "Enregistrement audio réussi",
+    0
+  ],
+  "ContribViewerCancel": [
+    "Annuler",
+    0
+  ],
+  "ContribViewerClose": [
+    "Fermer",
+    0
+  ],
+  "ContribViewerEdit": [
+    "Éditer",
+    0
+  ],
+  "ContribViewerNetworkError": [
+    "Erreur réseau, merci de réessayer.",
+    0
+  ],
+  "ContribViewerOpen": [
+    "Ouvrir dans l’espace central",
+    0
+  ],
+  "ContribViewerSave": [
+    "Enregistrer",
+    0
+  ],
+  "ContribViewerSaveError": [
+    "L’enregistrement a échoué, merci de réessayer.",
+    0
+  ],
+  "ContribViewerSaveSuccess": [
+    "Modifications enregistrées avec succès.",
+    0
+  ],
+  "ContribViewerTitle": [
+    "Contribution",
+    0
+  ],
+  "ContribViewerVersionEdited": [
+    "Version Corrigée",
+    0
+  ],
+  "ContribViewerVersionOriginal": [
+    "Version Originale",
+    0
+  ],
+  "Contribution": [
+    "Contribution",
+    0
+  ],
+  "ContributionCopySuccess": [
+    "Copié",
+    0
+  ],
+  "ContributionImportInvalidFormat": [
+    "Format non supporté : seuls les fichiers MP3 sont acceptés",
+    0
+  ],
+  "ContributionImportTranscribing": [
+    "Transcription en cours…",
+    0
+  ],
+  "ContributionImportUploading": [
+    "Envoi du fichier en cours…",
+    0
+  ],
+  "ContributionProdSelectedPlural": [
+    " productions sélectionnées",
+    0
+  ],
+  "ContributionProdSelectedSingular": [
+    " production sélectionnée",
+    0
+  ],
+  "ContributionRecordCaptured": [
+    "Audio capturé (",
+    0
+  ],
+  "ContributionRecordInProgress": [
+    "Enregistrement en cours…",
+    0
+  ],
+  "ContributionRecordReady": [
+    ") prêt à transcrire",
+    0
+  ],
+  "ContributionRecordUploading": [
+    "Sauvegarde en cours",
+    0
+  ],
+  "Date": [
+    "Date",
+    0
+  ],
+  "Detail": [
+    "Détail",
+    0
+  ],
+  "DownloadContrib": [
+    "Télécharger",
+    0
+  ],
+  "DownloadContribFail": [
+    "Echec de la génération, merci de réessayer",
+    0
+  ],
+  "DownloadContribSoonAvailable": [
+    "La présentation est en cours de génération, elle sera bientôt disponible",
+    0
+  ],
+  "ExportCSV": [
+    "Exporter la table en CSV",
+    0
+  ],
+  "ForgotPasswordConfirmButton": [
+    "Demander un code de connexion",
+    0
+  ],
+  "ForgotPasswordConfirmMessage": [
+    "Un email de confirmation a été envoyé à votre adresse email.",
+    0
+  ],
+  "ForgotPasswordInformation": [
+    "Après saisie de votre email, un code de connexion vous sera transmis. Votre compte sera désactivé tant que ce code n'aura pas été confirmé.",
+    0
+  ],
+  "ForgotPasswordPageTitle": [
+    "J'ai oublié mon mot de passe",
+    0
+  ],
+  "Group": [
+    "Groupe",
+    0
+  ],
+  "GroupsAllZone": [
+    "Toutes les zones",
+    0
+  ],
+  "GroupsCloseTooltip": [
+    "Annuler les modifications",
+    0
+  ],
+  "GroupsCount": [
+    "%%1%% paramètres associés",
+    0
+  ],
+  "GroupsCreate": [
+    "Ajout de clé autorisé",
+    0
+  ],
+  "GroupsCreateOffTooltip": [
+    "Création autorisée",
+    0
+  ],
+  "GroupsCreateOnTooltip": [
+    "Création interdite",
+    0
+  ],
+  "GroupsDelete": [
+    "Suppression de clé autorisée",
+    0
+  ],
+  "GroupsDeleteModalContent": [
+    "Etes-vous sur de vouloir supprimer le groupe %%1%% ?",
+    0
+  ],
+  "GroupsDeleteModalTitle": [
+    "Supprimer un groupe de référentiel",
+    0
+  ],
+  "GroupsDeleteOffTooltip": [
+    "Suppression autorisée",
+    0
+  ],
+  "GroupsDeleteOnTooltip": [
+    "Suppression interdite",
+    0
+  ],
+  "GroupsDeleteTooltip": [
+    "Supprimer ce groupe",
+    0
+  ],
+  "GroupsKey": [
+    "Clé",
+    0
+  ],
+  "GroupsNeedKey": [
+    "Clé saisie manuellement ?",
+    0
+  ],
+  "GroupsNeedKeyOffTooltip": [
+    "Clé automatique",
+    0
+  ],
+  "GroupsNeedKeyOnTooltip": [
+    "Clé manuelle",
+    0
+  ],
+  "GroupsNewKey": [
+    "Nouveau groupe",
+    0
+  ],
+  "GroupsNewKeyMandatory": [
+    "La clé du groupe est obligatoire",
+    0
+  ],
+  "GroupsNewTooltip": [
+    "Créer un groupe",
+    0
+  ],
+  "GroupsNoSettings": [
+    "Aucun paramètre associé",
+    0
+  ],
+  "GroupsOfallOffTooltip": [
+    "Clé traductible",
+    0
+  ],
+  "GroupsOfallOnTooltip": [
+    "Clé unique",
+    0
+  ],
+  "GroupsOneForAllLanguages": [
+    "Clé unique pour toutes les langues",
+    0
+  ],
+  "GroupsOrderBy": [
+    "Ordre de tri",
+    0
+  ],
+  "GroupsPageTitle": [
+    "Gestion des groupes de référentiels",
+    0
+  ],
+  "GroupsReadSecurityZone": [
+    "Zone de sécurité en lecture",
+    0
+  ],
+  "GroupsSaveTooltip": [
+    "Enregistrer les modifications",
+    0
+  ],
+  "GroupsSearchKey": [
+    "Recherche par nom de clé",
+    0
+  ],
+  "GroupsUpdate": [
+    "Modification de clé autorisée",
+    0
+  ],
+  "GroupsUpdateOffTooltip": [
+    "Mise à jour autorisée",
+    0
+  ],
+  "GroupsUpdateOnTooltip": [
+    "Mise à jour interdite",
+    0
+  ],
+  "GroupsWriteSecurityZone": [
+    "Zone de sécurité en écriture",
+    0
+  ],
+  "HistoryBackToActivity": [
+    "Retour à l'activité",
+    0
+  ],
+  "HistoryBreadcrumb": [
+    "Historique",
+    0
+  ],
+  "HistoryButtonLabel": [
+    "Historique des synthèses",
+    0
+  ],
+  "HistoryColAuthor": [
+    "Auteur",
+    0
+  ],
+  "HistoryColDate": [
+    "Date",
+    0
+  ],
+  "HistoryColGeneration": [
+    "Génération",
+    0
+  ],
+  "HistoryColProgress": [
+    "Avancement",
+    0
+  ],
+  "HistoryColTitle": [
+    "Nom du livrable",
+    0
+  ],
+  "HistoryEmpty": [
+    "Aucune synthèse n’a encore été générée pour cette activité.",
+    0
+  ],
+  "HistoryNewGeneration": [
+    "Nouvelle génération",
+    0
+  ],
+  "HistoryOpen": [
+    "Ouvrir / Comparer",
+    0
+  ],
+  "HistoryPageTitle": [
+    "Historique des synthèses",
+    0
+  ],
+  "HistoryPollingError": [
+    "Impossible de vérifier l’avancement des générations.",
+    0
+  ],
+  "HistorySectionTitle": [
+    "Générations lancées",
+    0
+  ],
+  "HistoryUntitled": [
+    "Synthèse sans titre",
+    0
+  ],
+  "HistoryWidgetTitle": [
+    "Dernières synthèses",
+    0
+  ],
+  "HistoryWidgetViewAll": [
+    "Voir toutes les synthèses",
+    0
+  ],
+  "HomePageTitle": [
+    "Accueil",
+    0
+  ],
+  "HomeTooltip": [
+    "Retour à l'accueil",
+    0
+  ],
+  "ImportActive": [
+    "En cours de traitement",
+    0
+  ],
+  "ImportCSV": [
+    "Importer un fichier CSV",
+    0
+  ],
+  "ImportConfigFile": [
+    "Configuration",
+    0
+  ],
+  "ImportLastImportLabelTitle": [
+    "Dernier import le %%1%%",
+    0
+  ],
+  "ImportSample": [
+    "Modèle",
+    0
+  ],
+  "ImportWaitingForProcess": [
+    "En attente de traitement",
+    0
+  ],
+  "ImportsPageTitle": [
+    "Page d'import",
+    0
+  ],
+  "InviteMailObject": [
+    "Vous avez été invité sur la plateforme Cockpit AI de Stellar",
+    0
+  ],
+  "LoadingContributionError": [
+    "Erreur lors du chargement des contributions, merci de réessayer.",
+    0
+  ],
+  "LoadingLabel": [
+    "Chargement...",
+    0
+  ],
+  "Login": [
+    "Se connecter",
+    0
+  ],
+  "LoginForgotPassword": [
+    "J'ai oublié mon mot de passe",
+    0
+  ],
+  "LoginLogButton": [
+    "Se connecter",
+    0
+  ],
+  "LoginPageTitle": [
+    "Identification",
+    0
+  ],
+  "LoginPassword": [
+    "Mot de passe",
+    0
+  ],
+  "LoginTitle": [
+    "Connexion",
+    0
+  ],
+  "LoginToken": [
+    "J'ai reçu un code de connexion",
+    0
+  ],
+  "LoginUsername": [
+    "Email",
+    0
+  ],
+  "LoginUsernamePlaceholder": [
+    "mon-compte@youarestellar.fr",
+    0
+  ],
+  "Logout": [
+    "Se déconnecter",
+    0
+  ],
+  "MFACodeEnter": [
+    "Entrez le code de vérification reçu par email",
+    0
+  ],
+  "MFACodeExpired": [
+    "Le code de vérification a expiré",
+    0
+  ],
+  "MFACodeInvalid": [
+    "Le code de vérification est invalide",
+    0
+  ],
+  "MFACodeMailObject": [
+    "Votre code de connexion",
+    0
+  ],
+  "MFACodeSent": [
+    "Le code de vérification a été envoyé",
+    0
+  ],
+  "MFADigit": [
+    "Chiffre",
+    0
+  ],
+  "MFADigitOf": [
+    "sur",
+    0
+  ],
+  "MFAResend": [
+    "Demander un nouveau code",
+    0
+  ],
+  "MFASubtitle": [
+    "Un code à usage unique vous a été envoyé par courriel.",
+    0
+  ],
+  "MFATitle": [
+    "Vérification en deux étapes",
+    0
+  ],
+  "MandatoryField": [
+    "Champ obligatoire",
+    0
+  ],
+  "ManyTagSelectedLabel": [
+    " groupes",
+    0
+  ],
+  "MenuAdminGroups": [
+    "Groupes",
+    0
+  ],
+  "MenuAdminRights": [
+    "Droits",
+    0
+  ],
+  "MenuAdminSettings": [
+    "Référentiels",
+    0
+  ],
+  "MenuAdminUsers": [
+    "Utilisateurs",
+    0
+  ],
+  "MenuAdminWorkflows": [
+    "Processus",
+    0
+  ],
+  "MenuAdminZones": [
+    "Zones de sécurités",
+    0
+  ],
+  "MenuAdministration": [
+    "Administration",
+    0
+  ],
+  "MenuAssets": [
+    "Médiathèque",
+    0
+  ],
+  "MenuDashboard": [
+    "Tableau de Bord",
+    0
+  ],
+  "MenuPortfolios": [
+    "Portefeuilles",
+    0
+  ],
+  "MenuProjects": [
+    "Projets",
+    0
+  ],
+  "MenuWorkspace": [
+    "Espace de travail",
+    0
+  ],
+  "MicrophoneAccessRefused": [
+    "Accès micro refusé",
+    0
+  ],
+  "MyAccountPageTitle": [
+    "Mon profil",
+    0
+  ],
+  "MyAccountTooltip": [
+    "Mon profil",
+    0
+  ],
+  "NarrativeClipboardCopied": [
+    "Copié dans le presse-papiers",
+    0
+  ],
+  "NarrativeClipboardCopyFailed": [
+    "La copie a échoué",
+    0
+  ],
+  "NarrativeContextHelp": [
+    "Ces consignes guideront le moteur d'IA lors de la génération de la synthèse.",
+    0
+  ],
+  "NarrativeContextLabel": [
+    "Contexte / Consignes particulières pour l'IA (optionnel)",
+    0
+  ],
+  "NarrativeContextPlaceholder": [
+    "Ex: Insister sur la conduite du changement, adopter un ton synthétique orienté Codir, prendre en compte le contexte de restructuration...",
+    0
+  ],
+  "NarrativeContributionPreview": [
+    "Aperçu de la contribution",
+    0
+  ],
+  "NarrativeErrorOccurred": [
+    "Une erreur est survenue.",
+    0
+  ],
+  "NarrativeGenerateButton": [
+    "Générer",
+    0
+  ],
+  "NarrativeGenerationFailed": [
+    "La génération a échoué. Veuillez réessayer.",
+    0
+  ],
+  "NarrativeParametersSection": [
+    "Paramètres",
+    0
+  ],
+  "NarrativeParametersSubtitle": [
+    "Configurez la génération de l’analyse et du narratif.",
+    0
+  ],
+  "NarrativeParametersTitle": [
+    "Paramètres du narratif",
+    0
+  ],
+  "NarrativeRequestAccepted": [
+    "Demande prise en compte",
+    0
+  ],
+  "NarrativeResultAnalyseLabel": [
+    "Analyse",
+    0
+  ],
+  "NarrativeResultBackToTop": [
+    "Retour en haut",
+    0
+  ],
+  "NarrativeResultCopy": [
+    "Copier",
+    0
+  ],
+  "NarrativeResultCopyAll": [
+    "Tout copier",
+    0
+  ],
+  "NarrativeResultDisplayControls": [
+    "Affichage",
+    0
+  ],
+  "NarrativeResultEmptyHint": [
+    "Cochez un document pour l’afficher.",
+    0
+  ],
+  "NarrativeResultGenerating": [
+    "Génération en cours",
+    0
+  ],
+  "NarrativeResultNarratifLabel": [
+    "Narratif",
+    0
+  ],
+  "NarrativeResultPollingError": [
+    "Impossible de vérifier l’état de la génération.",
+    0
+  ],
+  "NarrativeResultRefreshPage": [
+    "Rafraîchir la page",
+    0
+  ],
+  "NarrativeResultRegenerate": [
+    "Régénérer",
+    0
+  ],
+  "NarrativeResultStatusPending": [
+    "En cours",
+    0
+  ],
+  "NarrativeResultStatusReady": [
+    "Disponible",
+    0
+  ],
+  "NarrativeResultSubtitle": [
+    "Analyse transverse et narratif de transformation",
+    0
+  ],
+  "NarrativeResultTitle": [
+    "Narratif final",
+    0
+  ],
+  "NarrativeTitleLabel": [
+    "Nom du livrable",
+    0
+  ],
+  "NarrativeTitlePlaceholder": [
+    "ex : Synthèse Copil du 20/08/2026",
+    0
+  ],
+  "NarrativeToastClose": [
+    "Fermer",
+    0
+  ],
+  "NewActivityPageTitle": [
+    "Nouvelle activité",
+    0
+  ],
+  "NewActivitySubTitle": [
+    "Choisissez le type d'activité et renseignez les informations de base",
+    0
+  ],
+  "NewActivityTitle": [
+    "Nouvelle activité",
+    0
+  ],
+  "NewOneShotPageTitle": [
+    "Nouveau One Shot",
+    0
+  ],
+  "NewOneShotSubTitle": [
+    "Choisissez le nom et le type de votre One Shot",
+    0
+  ],
+  "NewOneShotTitle": [
+    "Création d'un One Shot",
+    0
+  ],
+  "Next": [
+    "Suivant",
+    0
+  ],
+  "OneShotArchetypeDominant": [
+    "Titre",
+    0
+  ],
+  "OneShotAxisAncrage": [
+    "Ancrage",
+    0
+  ],
+  "OneShotAxisAncrage.description": [
+    "Confiance dans la volonté de l'organisation, la cohérence de ses décisions et la capacité du changement à s'inscrire dans la durée.",
+    0
+  ],
+  "OneShotAxisCapaciteAgir": [
+    "Capacité d'agir",
+    0
+  ],
+  "OneShotAxisCapaciteAgir.description": [
+    "Sentiment de disposer des compétences, ressources, soutiens et marges de manœuvre nécessaires pour réussir.",
+    0
+  ],
+  "OneShotAxisCible": [
+    "Cible",
+    0
+  ],
+  "OneShotAxisCible.description": [
+    "Clarté de ce que le collectif, ses métiers et ses repères deviendront dans la situation cible.",
+    0
+  ],
+  "OneShotAxisCooperation": [
+    "Coopération",
+    0
+  ],
+  "OneShotAxisCooperation.description": [
+    "Capacité du collectif à partager, apprendre, se coordonner et résoudre les difficultés au-delà des silos.",
+    0
+  ],
+  "OneShotAxisProgres": [
+    "Progrès",
+    0
+  ],
+  "OneShotAxisProgres.description": [
+    "Capacité à tirer parti de l'expérience pour adapter, améliorer ou dépasser la solution initiale.",
+    0
+  ],
+  "OneShotAxisProximite": [
+    "Proximité",
+    0
+  ],
+  "OneShotAxisProximite.description": [
+    "Degré auquel le collectif perçoit le changement comme proche et se sent directement concerné.",
+    0
+  ],
+  "OneShotAxisTrajectoire": [
+    "Trajectoire",
+    0
+  ],
+  "OneShotAxisTrajectoire.description": [
+    "Lisibilité du chemin : étapes, rythme, responsabilités, moyens et modalités de mise en œuvre.",
+    0
+  ],
+  "OneShotGenerationError": [
+    "Une erreur est survenue pendant la génération",
+    0
+  ],
+  "OneShotNameLabel": [
+    "Nom du One Shot",
+    0
+  ],
+  "OneShotNamePlaceholder": [
+    "ex : Réunion de cadrage",
+    0
+  ],
+  "OneShotPageGenerationTitle": [
+    "Génération",
+    0
+  ],
+  "OneShotPageTitle": [
+    "One Shot",
+    0
+  ],
+  "OneShotSyntheseGenerale": [
+    "Synthèse générale",
+    0
+  ],
+  "OneShotType.InterviewSynthesis.title": [
+    "Synthèse d'entretien",
+    0
+  ],
+  "OneShotType.PerceptionDiagnostic.title": [
+    "Diagnostic de perception",
+    0
+  ],
+  "OneShotType.Transcription Synthèse.description": [
+    "L'agent qui fixe le cap et le rythme. Il formule les résultats attendus, la cible idéale et les étapes intermédiaires avec leurs jalons.",
+    0
+  ],
+  "OneShotType.Transcription Synthèse.title": [
+    "Transcription Synthèse",
+    0
+  ],
+  "OneShotType.Transcription.title": [
+    "Transcription-Synthèse",
+    0
+  ],
+  "OneShotTypeLabel": [
+    "Type du One Shot",
+    0
+  ],
+  "OneShotTypeSeeMethod": [
+    "Voir la fiche méthode",
+    0
+  ],
+  "OneShotTypeUnavailableTooltip": [
+    "Ce type de One Shot sera bientôt disponible",
+    0
+  ],
+  "OneShots": [
+    "One Shots",
+    0
+  ],
+  "OneTagSelectedLabel": [
+    "1 groupe",
+    0
+  ],
+  "PasswordSetConfirmation": [
+    "Confirmation",
+    0
+  ],
+  "PasswordSetPageTitle": [
+    "Nouveau mot de passe",
+    0
+  ],
+  "PasswordSetPassword": [
+    "Nouveau mot de passe",
+    0
+  ],
+  "PasswordSetUpdateButton": [
+    "Enregistrer",
+    0
+  ],
+  "Previous": [
+    "Précédent",
+    0
+  ],
+  "RecordingError": [
+    "Erreur enregistrement audio",
+    0
+  ],
+  "RecordingUploadError": [
+    "Erreur lors de l’envoi",
+    0
+  ],
+  "RecoverMailObject": [
+    "Réinitialisation de votre mot de passe",
+    0
+  ],
+  "RememberMe": [
+    "Se souvenir de moi",
+    0
+  ],
+  "ReturnToLoginPage": [
+    "Retour à la page de connexion",
+    0
+  ],
+  "RightsAddProfileTooltip": [
+    "Ajouter un profil",
+    0
+  ],
+  "RightsDeleteModalContent": [
+    "Etes-vous sur de vouloir supprimer le profil %%1%% ?",
+    0
+  ],
+  "RightsDeleteModalTitle": [
+    "Supprimer un profil",
+    0
+  ],
+  "RightsDeleteProfileTooltip": [
+    "Supprimer ce profil",
+    0
+  ],
+  "RightsForbiddenTooltip": [
+    "Accès interdit",
+    0
+  ],
+  "RightsFullAccessTooltip": [
+    "Accès complet (lecture/écriture)",
+    0
+  ],
+  "RightsModalLabel": [
+    "Veuillez saisir le nom du nouveau profil",
+    0
+  ],
+  "RightsModalTitle": [
+    "Ajout d'un nouveau profil",
+    0
+  ],
+  "RightsPageTitle": [
+    "Gestion des droits",
+    0
+  ],
+  "RightsProfileNameTooltip": [
+    "%%1%% comptes utilisateurs",
+    0
+  ],
+  "RightsReadOnlyTooltip": [
+    "Accès en lecture seulement",
+    0
+  ],
+  "Save": [
+    "Enregistrer",
+    0
+  ],
+  "SettingsCloseTooltip": [
+    "Annuler les modifications",
+    0
+  ],
+  "SettingsDeleteModalContent": [
+    "Etes-vous sur de vouloir supprimer le paramètre %%1%% ?",
+    0
+  ],
+  "SettingsDeleteModalTitle": [
+    "Suppression de paramètre",
+    0
+  ],
+  "SettingsDeleteTooltip": [
+    "Supprimer la clé",
+    0
+  ],
+  "SettingsEditTooltip": [
+    "Modifier",
+    0
+  ],
+  "SettingsExportFilename": [
+    "parametres_%%1%%",
+    0
+  ],
+  "SettingsKey": [
+    "Clé",
+    0
+  ],
+  "SettingsNewKey": [
+    "Nouvelle clé",
+    0
+  ],
+  "SettingsNewKeyMandatory": [
+    "La clé est obligatoire.",
+    0
+  ],
+  "SettingsNewNumeric": [
+    "Valeur associée",
+    0
+  ],
+  "SettingsNewText": [
+    "Libellé associé",
+    0
+  ],
+  "SettingsNewTooltip": [
+    "Ajouter la nouvelle clé",
+    0
+  ],
+  "SettingsNumeric": [
+    "Valeur",
+    0
+  ],
+  "SettingsPageTitle": [
+    "Gestion des référentiels",
+    0
+  ],
+  "SettingsSaveTooltip": [
+    "Enregistrer les modifications",
+    0
+  ],
+  "SettingsSearchKey": [
+    "Rechercher une clé",
+    0
+  ],
+  "SettingsSearchText": [
+    "Rechercher un label",
+    0
+  ],
+  "SettingsText": [
+    "Label",
+    0
+  ],
+  "SettingsUploadContent": [
+    "Synthèse de l'import :\n\r- %%1%% paramètres mis à jour\n\r- %%2%% paramètres créés\n\r- %%3%% lignes en erreurs",
+    0
+  ],
+  "SettingsUploadTitle": [
+    "Import de données CSV",
+    0
+  ],
+  "Since": [
+    "depuis",
+    0
+  ],
+  "Start": [
+    "Commencer",
+    0
+  ],
+  "Status": [
+    "Statut",
+    0
+  ],
+  "SynthesisError": [
+    "Erreur lors de la génération de la synthèse. Veuillez réessayer.",
+    0
+  ],
+  "SynthesisFormatLabel": [
+    "Format",
+    0
+  ],
+  "SynthesisIntentLabel": [
+    "Intention",
+    0
+  ],
+  "SynthesisLengthLabel": [
+    "Longueur",
+    0
+  ],
+  "SynthesisSelectPlaceholder": [
+    "Sélectionnez une valeur",
+    0
+  ],
+  "SynthesisSelectionRequired": [
+    "Renseignez les trois paramètres (Format, Longueur, Intention) avant de lancer la génération.",
+    0
+  ],
+  "SynthesisSuccess": [
+    "Synthèse génerée avec succès",
+    0
+  ],
+  "SynthesisVolumetryEmpty": [
+    "Sélectionnez un format et une longueur pour afficher la volumétrie.",
+    0
+  ],
+  "SynthesisVolumetryLabel": [
+    "Volumétrie indicative",
+    0
+  ],
+  "SynthesisVolumetryUnit": [
+    "mots",
+    0
+  ],
+  "TagButtonChooseTag": [
+    "Choisissez votre groupe de travail",
+    0
+  ],
+  "TagSelectAssignError": [
+    "L'affectation a échoué, merci de réessayer.",
+    0
+  ],
+  "TagSelectModalAriaLabel": [
+    "Étiquettes de groupe disponibles",
+    0
+  ],
+  "TagSelectModalDesc1": [
+    "Sélectionnez l'étiquette correspondant à votre sous-atelier.",
+    0
+  ],
+  "TagSelectModalDesc2": [
+    "Ce choix rattachera toutes vos contributions de la session.",
+    0
+  ],
+  "TagSelectModalSubmitBtn": [
+    "Enregistrer",
+    0
+  ],
+  "TagSelectModalTitle": [
+    "Choisissez votre groupe de travail",
+    0
+  ],
+  "TagSelectNetworkError": [
+    "Erreur réseau, merci de réessayer.",
+    0
+  ],
+  "TextTooLongError": [
+    "Le texte est trop long",
+    0
+  ],
+  "TranscriptionError": [
+    "Erreur lors de la transcription de l'audio. Veuillez réessayer.",
+    0
+  ],
+  "TranscriptionInProgress": [
+    "Transcription de l'audio par l'IA en cours...",
+    0
+  ],
+  "TranscriptionSuccess": [
+    "Transcription finalisée avec succès",
+    0
+  ],
+  "TransformationNarrative": [
+    "Narratif de transformation",
+    0
+  ],
+  "TransformationNarrativeTypeDescription": [
+    "Captez la parole d'un groupe, structurez-la par axes (Pourquoi / Quoi / Comment) et produisez un narratif de transformation fluide et engageant.",
+    0
+  ],
+  "TransverseAccordionToggle": [
+    "Déplier ou replier la section",
+    0
+  ],
+  "TransverseBloc1Title": [
+    "Points forts et points d'amélioration du narratif",
+    0
+  ],
+  "TransverseBloc2Title": [
+    "Consensus, dissensus et ambiguïtés",
+    0
+  ],
+  "TransverseBloc3Title": [
+    "Éléments saillants et points de vigilance",
+    0
+  ],
+  "TransverseEmptySection": [
+    "Aucun contenu disponible pour cette section.",
+    0
+  ],
+  "TransverseLabelAmbiguites": [
+    "Ambiguïtés",
+    0
+  ],
+  "TransverseLabelConsensus": [
+    "Consensus",
+    0
+  ],
+  "TransverseLabelDissensus": [
+    "Dissensus",
+    0
+  ],
+  "TransverseLabelElementsSaillants": [
+    "Éléments saillants",
+    0
+  ],
+  "TransverseLabelPointsAmelioration": [
+    "Points d'amélioration",
+    0
+  ],
+  "TransverseLabelPointsForts": [
+    "Points forts",
+    0
+  ],
+  "TransverseLabelPointsVigilance": [
+    "Points de vigilance",
+    0
+  ],
+  "TransverseLabelSyntheseBloc1": [
+    "Synthèse du regard miroir",
+    0
+  ],
+  "TransverseLabelSyntheseBloc2": [
+    "Synthèse des convergences et divergences",
+    0
+  ],
+  "TransverseLabelSyntheseBloc3": [
+    "Synthèse de la trajectoire et de la vigilance",
+    0
+  ],
+  "TransverseStep_1_1_PointsForts": [
+    "Points forts",
+    0
+  ],
+  "TransverseStep_1_2_PointsAmelioration": [
+    "Points d'amélioration",
+    0
+  ],
+  "TransverseStep_1_3_Synthese": [
+    "Synthèse du regard miroir",
+    0
+  ],
+  "TransverseStep_2_1_Consensus": [
+    "Consensus",
+    0
+  ],
+  "TransverseStep_2_2_Dissensus": [
+    "Dissensus",
+    0
+  ],
+  "TransverseStep_2_3_Ambiguites": [
+    "Ambiguïtés",
+    0
+  ],
+  "TransverseStep_2_4_Synthese": [
+    "Synthèse des convergences et divergences",
+    0
+  ],
+  "TransverseStep_3_1_ElementsSaillants": [
+    "Éléments saillants",
+    0
+  ],
+  "TransverseStep_3_2_PointsVigilance": [
+    "Points de vigilance",
+    0
+  ],
+  "TransverseStep_3_3_Synthese": [
+    "Synthèse de la trajectoire et de la vigilance",
+    0
+  ],
+  "TransverseSummaryEyebrow": [
+    "Synthèse du bloc",
+    0
+  ],
+  "Type": [
+    "Type",
+    0
+  ],
+  "UsersCancelTooltip": [
+    "Annuler les modifications",
+    0
+  ],
+  "UsersCreatedOnTooltip": [
+    "Compte utilisateur créé le %%1%%",
+    0
+  ],
+  "UsersDetailsTooltip": [
+    "Editer les détails",
+    0
+  ],
+  "UsersDisabledTooltip": [
+    "Compte actif",
+    0
+  ],
+  "UsersEditFirstnameMandatory": [
+    "Le prénom est obligatoire",
+    0
+  ],
+  "UsersEditLastnameMandatory": [
+    "Le nom est obligatoire",
+    0
+  ],
+  "UsersEditPhoneNumberMandatory": [
+    "Le numéro de téléphone est obligatoire",
+    0
+  ],
+  "UsersEditTooltip": [
+    "Modifier ce compte",
+    0
+  ],
+  "UsersEmail": [
+    "Email",
+    0
+  ],
+  "UsersEnabledTooltip": [
+    "Compte désactivé",
+    0
+  ],
+  "UsersExpiredTooltip": [
+    "Mot de passe expiré - dernier changement le %%1%%",
+    0
+  ],
+  "UsersExportFilename": [
+    "utilisateurs",
+    0
+  ],
+  "UsersExportTitle": [
+    "Utilisateurs",
+    0
+  ],
+  "UsersExtraTooltip": [
+    "Détails",
+    0
+  ],
+  "UsersFaultyAccessTooltip": [
+    "Les %%1%% derniers accès sont erronés",
+    0
+  ],
+  "UsersFilterStatusAll": [
+    "Tous les comptes",
+    0
+  ],
+  "UsersFirstname": [
+    "Prénom",
+    0
+  ],
+  "UsersLanguage": [
+    "Langue",
+    0
+  ],
+  "UsersLastLoginTooltip": [
+    "Dernier accès le %%1%%",
+    0
+  ],
+  "UsersLastname": [
+    "Nom",
+    0
+  ],
+  "UsersLockTooltip": [
+    "Compte non verrouillé",
+    0
+  ],
+  "UsersModalAddTitle": [
+    "Ajouter un compte - Saisie du mot de passe",
+    0
+  ],
+  "UsersModalChgtPwdTitle": [
+    "Réinitialisation de mot de passe",
+    0
+  ],
+  "UsersModalConfirmPassword": [
+    "Confirmer le mot de passe",
+    0
+  ],
+  "UsersModalConfirmPasswordError": [
+    "Les deux mots de passes saisis ne correspondent pas",
+    0
+  ],
+  "UsersModalExtraTitle": [
+    "Editer les détails",
+    0
+  ],
+  "UsersModalPassword": [
+    "Mot de passe",
+    0
+  ],
+  "UsersModalPasswordMandatory": [
+    "Le mot de passe doit contenir :<br />- Douze (12) caractères minimum<br />- Au moins 3 types parmi : majuscule, minuscule, chiffre, caractère spécial.",
+    0
+  ],
+  "UsersNewEmail": [
+    "Créer un compte avec cet email",
+    0
+  ],
+  "UsersNewEmailMandatory": [
+    "L'email est obligatoire",
+    0
+  ],
+  "UsersNewFirstname": [
+    "Prénom du nouveau compte",
+    0
+  ],
+  "UsersNewFirstnameMandatory": [
+    "Le prénom est obligatoire",
+    0
+  ],
+  "UsersNewLastname": [
+    "Nom du nouveau compte",
+    0
+  ],
+  "UsersNewLastnameMandatory": [
+    "Le nom est obligatoire",
+    0
+  ],
+  "UsersNewPhoneNumber": [
+    "Numéro de téléphone du nouveau compte",
+    0
+  ],
+  "UsersNewPhoneNumberMandatory": [
+    "Le numéro de téléphone est obligatoire",
+    0
+  ],
+  "UsersNewTooltip": [
+    "Ajouter le compte ce compte",
+    0
+  ],
+  "UsersNoLoginTooltip": [
+    "Aucune connexion sur ce compte",
+    0
+  ],
+  "UsersNotExpiredTooltip": [
+    "Mot de passe valide",
+    0
+  ],
+  "UsersPageTitle": [
+    "Gestion des utilisateurs",
+    0
+  ],
+  "UsersPhoneNumber": [
+    "Numéro de téléphone",
+    0
+  ],
+  "UsersProfile": [
+    "Profil",
+    0
+  ],
+  "UsersResetPasswordTooltip": [
+    "Changer le mot de passe",
+    0
+  ],
+  "UsersSaveTooltip": [
+    "Enregistrer les modifications",
+    0
+  ],
+  "UsersSearch": [
+    "Recherche sur email, nom ou prénom",
+    0
+  ],
+  "UsersSearchLanguage": [
+    "Langue",
+    0
+  ],
+  "UsersSearchLanguageAll": [
+    "Toutes les langues",
+    0
+  ],
+  "UsersSearchProfile": [
+    "Profil",
+    0
+  ],
+  "UsersSearchProfileAll": [
+    "Tous les profils",
+    0
+  ],
+  "UsersSearchStatus": [
+    "Status",
+    0
+  ],
+  "UsersStatusEnabled": [
+    "Actif ?",
+    0
+  ],
+  "UsersStatusExpired": [
+    "Mot de passe expiré ?",
+    0
+  ],
+  "UsersStatusLocked": [
+    "Bloqué ?",
+    0
+  ],
+  "UsersUnlockTooltip": [
+    "Compte verrouillé",
+    0
+  ],
+  "Version": [
+    "Version",
+    0
+  ],
+  "WorkflowNew": [
+    "Nouveau processus",
+    0
+  ],
+  "WorkflowNewMandatory": [
+    "Le nom du nouveau processus est obligatoire.",
+    0
+  ],
+  "WorkflowNewStep": [
+    "Nouvelle étape",
+    0
+  ],
+  "WorkflowNewStepMandatory": [
+    "Le nom de la nouvelle étape est obligatoire.",
+    0
+  ],
+  "WorkflowNewTooltip": [
+    "Ajouter un processus",
+    0
+  ],
+  "WorkflowNextRemoveTooltip": [
+    "Supprimer cette étape suivante",
+    0
+  ],
+  "WorkflowNextTitle": [
+    "Etapes suivantes autorisées",
+    0
+  ],
+  "WorkflowProfileRemoveTooltip": [
+    "Enlever des profils autorisés",
+    0
+  ],
+  "WorkflowProfileTitle": [
+    "Profils pouvant intervenir à cette étape",
+    0
+  ],
+  "WorkflowStepDeleteTooltip": [
+    "Supprimer cette étape",
+    0
+  ],
+  "WorkflowStepNewTooltip": [
+    "Ajouter une étape",
+    0
+  ],
+  "WorkflowStepNextAddLabel": [
+    "Ajouter une étape suivante",
+    0
+  ],
+  "WorkflowStepProfileAddLabel": [
+    "Ajouter un profil utilisateur",
+    0
+  ],
+  "WorkflowStepTitle": [
+    "Etape",
+    0
+  ],
+  "WorkflowsPageTitle": [
+    "Gestionnaire de processus",
+    0
+  ],
+  "ZonesCloseTooltip": [
+    "Annuler les modifications",
+    0
+  ],
+  "ZonesDeleteModalContent": [
+    "Etes-vous sur de vouloir supprimer la clé %%1%% (cela la rendra innaccessible) ?",
+    0
+  ],
+  "ZonesDeleteModalTitle": [
+    "Supprimer une zone de sécuité",
+    0
+  ],
+  "ZonesDeleteTooltip": [
+    "Supprimer la clé",
+    0
+  ],
+  "ZonesKey": [
+    "Clé",
+    0
+  ],
+  "ZonesName": [
+    "Zone de sécurité",
+    0
+  ],
+  "ZonesNewKey": [
+    "Nouvelle clé",
+    0
+  ],
+  "ZonesNewKeyMandatory": [
+    "La clé est obligatoire.",
+    0
+  ],
+  "ZonesNewTooltip": [
+    "Ajouter la nouvelle clé",
+    0
+  ],
+  "ZonesPageTierAPI": [
+    "Zones de sécurités de l'API",
+    0
+  ],
+  "ZonesPageTierBack": [
+    "Zones de sécurités du back",
+    0
+  ],
+  "ZonesPageTierFront": [
+    "Zones de sécruités du front",
+    0
+  ],
+  "ZonesPageTitle": [
+    "Gestion des zones de sécurités",
+    0
+  ],
+  "ZonesSaveTooltip": [
+    "Enregistrer les modifications",
+    0
+  ],
+  "ZonesSearchAll": [
+    "Toutes les zones",
+    0
+  ],
+  "ZonesSearchKey": [
+    "Rechercher une clé",
+    0
+  ],
+  "actionAddActivity": [
+    "Ajouter une activité",
+    0
+  ],
+  "actionAddOneShot": [
+    "Nouveau One Shot",
+    0
+  ],
+  "actionAddPortfolio": [
+    "Nouveau portefeuille",
+    0
+  ],
+  "actionAddProject": [
+    "Nouveau projet",
+    0
+  ],
+  "actionCancel": [
+    "Annuler",
+    0
+  ],
+  "actionEditActivity": [
+    "Modifier",
+    0
+  ],
+  "actionEditPortfolio": [
+    "Éditer",
+    0
+  ],
+  "actionEditProject": [
+    "Éditer",
+    0
+  ],
+  "actionSave": [
+    "Enregistrer",
+    0
+  ],
+  "actionViewAll": [
+    "Voir tous",
+    0
+  ],
+  "activities": [
+    "activités",
+    0
+  ],
+  "activitiesLabel": [
+    "Activités",
+    0
+  ],
+  "activity": [
+    "activité",
+    0
+  ],
+  "activityFormEditTitle": [
+    "Modifier l'activité",
+    0
+  ],
+  "activityFormFooter": [
+    " ",
+    0
+  ],
+  "activityFormSubtitle": [
+    "Ces informations sont utilisées par l'IA lors de la génération des synthèses et des narratifs.",
+    0
+  ],
+  "activityIndexEmpty": [
+    "Aucune activité pour le moment.",
+    0
+  ],
+  "activityIndexEmptyTitle": [
+    "Aucune activité",
+    0
+  ],
+  "activityIndexSubtitle": [
+    "Retrouvez l'ensemble des activités auxquelles vous participez",
+    0
+  ],
+  "activityIndexTitle": [
+    "Activités",
+    0
+  ],
+  "analyseAndSynthetize": [
+    "Analyser et synthétiser",
+    0
+  ],
+  "analyseSynthesiseTitle": [
+    "Paramétrage du narratif",
+    0
+  ],
+  "analyseTitle": [
+    "Analyse des contributions",
+    0
+  ],
+  "audio_imported": [
+    "Import audio",
+    0
+  ],
+  "audio_record": [
+    "Enregistrement audio",
+    0
+  ],
+  "axe_btn_back_activity": [
+    "Retour à l'activité",
+    0
+  ],
+  "axe_btn_copy": [
+    "Copier",
+    0
+  ],
+  "axe_btn_generate_v2": [
+    "Générer V2",
+    0
+  ],
+  "axe_btn_preview": [
+    "Prévisualiser",
+    0
+  ],
+  "axe_btn_validate_version": [
+    "Valider version",
+    0
+  ],
+  "axe_context_desc": [
+    "Capture audio, transcription et synthèse des échanges du groupe pour cet axe de travail.",
+    0
+  ],
+  "axe_context_label": [
+    "Axe actif",
+    0
+  ],
+  "axe_context_title": [
+    "Réunion de cadrage",
+    0
+  ],
+  "axe_contribution_new": [
+    "Nouvelle contribution",
+    0
+  ],
+  "axe_contribution_title": [
+    "Titre de la contribution",
+    0
+  ],
+  "axe_contribution_title_help": [
+    "Le titre de la contribution doit être unique et descriptif.",
+    0
+  ],
+  "axe_contribution_title_placeholder": [
+    "Entrez un titre pour cette nouvelle contribution",
+    0
+  ],
+  "axe_dz_main": [
+    "Glissez-déposez un fichier MP3 ici",
+    0
+  ],
+  "axe_dz_sub": [
+    "ou cliquez pour parcourir (MP3, WAV, M4A)",
+    0
+  ],
+  "axe_empty_favorites": [
+    "Aucun favori pour cette étiquette.",
+    0
+  ],
+  "axe_empty_state_subtext": [
+    "Le transcript brut reste consultable en cliquant la contribution dans le panneau de gauche.",
+    0
+  ],
+  "axe_empty_state_text": [
+    "Sélectionnez des contributions, puis cliquez sur « Générer une synthèse ».",
+    0
+  ],
+  "axe_filter_all": [
+    "Tout",
+    0
+  ],
+  "axe_filter_favorites": [
+    "Favoris",
+    0
+  ],
+  "axe_filter_syntheses": [
+    "Synthèses",
+    0
+  ],
+  "axe_filter_transcripts": [
+    "Transcripts",
+    0
+  ],
+  "axe_filter_validated": [
+    "Validé",
+    0
+  ],
+  "axe_hint_record": [
+    "Appuyez pour démarrer l'enregistrement",
+    0
+  ],
+  "axe_hint_selected_count": [
+    "2 contributions sélectionnées",
+    0
+  ],
+  "axe_modal_p1": [
+    "Bon, on démarre le point de cadrage. L'objectif aujourd'hui c'est de clarifier le périmètre du premier lot.",
+    0
+  ],
+  "axe_modal_p2": [
+    "Côté intégration on est prêts à figer la maquette, il manque juste la validation de l'ergonomie de la sidebar.",
+    0
+  ],
+  "axe_modal_p3": [
+    "D'accord, et pour la capture audio on garde les trois modes : enregistrement, import et collage de texte.",
+    0
+  ],
+  "axe_modal_p4": [
+    "Parfait. On valide le design system avant d'attaquer la logique métier.",
+    0
+  ],
+  "axe_modal_title_transcript": [
+    "Transcript brut",
+    0
+  ],
+  "axe_page_title": [
+    "Espace de travail",
+    0
+  ],
+  "axe_panel_capture_title": [
+    "Capture",
+    0
+  ],
+  "axe_panel_synthesis_title": [
+    "Synthèse IA",
+    0
+  ],
+  "axe_paste_placeholder": [
+    "Collez ici un texte à transcrire ou à synthétiser…",
+    0
+  ],
+  "axe_preview_transcript_title": [
+    "Prévisualiser le transcript brut",
+    0
+  ],
+  "axe_prod_name_import": [
+    "Import audio · point hebdo",
+    0
+  ],
+  "axe_prod_name_rec_g1": [
+    "Enregistrement · Groupe 1",
+    0
+  ],
+  "axe_prod_name_synth_draft": [
+    "Synthèse IA · brouillon",
+    0
+  ],
+  "axe_prod_name_synth_final": [
+    "Synthèse IA · finale",
+    0
+  ],
+  "axe_sidebar_title": [
+    "Contributions du groupe",
+    0
+  ],
+  "axe_synth_h_decisions": [
+    "Décisions",
+    0
+  ],
+  "axe_synth_h_etapes": [
+    "Prochaines étapes",
+    0
+  ],
+  "axe_synth_h_objet": [
+    "Objet de la réunion",
+    0
+  ],
+  "axe_synth_li_capture": [
+    "Le module de capture utilise des onglets : enregistrement, import audio et collage de texte.",
+    0
+  ],
+  "axe_synth_li_logique": [
+    "Brancher la logique métier (capture, transcription, synthèse) dans un second temps.",
+    0
+  ],
+  "axe_synth_li_maquette": [
+    "Intégrer la maquette et faire valider l'ergonomie générale.",
+    0
+  ],
+  "axe_synth_li_sidebar": [
+    "La sidebar des contributions reste positionnée à gauche, en largeur fixe.",
+    0
+  ],
+  "axe_synth_li_transcript": [
+    "Le transcript brut est consultable en modale ; la synthèse reste en lecture seule.",
+    0
+  ],
+  "axe_synth_p_cadrage": [
+    "Cadrage du premier lot : validation de l'ergonomie et figeage du design system avant le développement de la logique métier.",
+    0
+  ],
+  "axe_tab_import": [
+    "Import audio",
+    0
+  ],
+  "axe_tab_paste": [
+    "Coller du texte",
+    0
+  ],
+  "axe_tab_record": [
+    "Enregistrement",
+    0
+  ],
+  "axe_type_asset": [
+    "Document",
+    0
+  ],
+  "axe_type_synthesis": [
+    "Synthèse",
+    0
+  ],
+  "axe_type_transcript": [
+    "Transcript",
+    0
+  ],
+  "axis": [
+    "axe",
+    0
+  ],
+  "back": [
+    "Retour",
+    0
+  ],
+  "btn_generate": [
+    "Générer",
+    0
+  ],
+  "btn_generate_pres": [
+    "Générer une présentation (Beta)",
+    0
+  ],
+  "btn_generate_synthesis": [
+    "Générer une synthèse",
+    0
+  ],
+  "cancel": [
+    "Annuler",
+    0
+  ],
+  "cgu": [
+    "Conditions Générales d'Utilisation",
+    0
+  ],
+  "cguAcceptButton": [
+    "Accepter et continuer",
+    0
+  ],
+  "cguConsentText": [
+    "Je reconnais avoir lu et j’accepte les Conditions Générales d’Utilisation.",
+    0
+  ],
+  "cguReadBeforeUser": [
+    "Avant de continuer, vous devez lire et accepter les CGU de la plateforme.",
+    0
+  ],
+  "cguReadPdf": [
+    "Lire le texte complet des CGU.",
+    0
+  ],
+  "cguRequiredText": [
+    "Vous devez accepter les CGU pour continuer.",
+    0
+  ],
+  "cguTextIntro": [
+    "En utilisant cette application, vous acceptez les règles de fonctionnement, les conditions d’accès, ainsi que les obligations liées à la confidentialité et à la sécurité des données.",
+    0
+  ],
+  "cguTextSubIntro": [
+    "Vous vous engagez à utiliser la plateforme conformément à son objectif\n\t\t\t\t\t\t\t\t\tet à ne pas détourner les fonctionnalités mises à disposition.",
+    0
+  ],
+  "choose_a_file": [
+    "Sélectionnez un fichier",
+    0
+  ],
+  "contrib_synthesis": [
+    "Synthèse générée",
+    0
+  ],
+  "contribution_empty_all": [
+    "Aucune contribution disponible",
+    0
+  ],
+  "contribution_empty_favorites": [
+    "Aucun favori.",
+    0
+  ],
+  "contribution_empty_syntheses": [
+    "Aucune synthèse disponible.",
+    0
+  ],
+  "contribution_empty_transcripts": [
+    "Aucune transcription disponible.",
+    0
+  ],
+  "contributions": [
+    "Contribution",
+    0
+  ],
+  "dashboard": [
+    "Tableau de bord",
+    0
+  ],
+  "dashboardActivitiesEmpty": [
+    "Aucune activité pour le moment.",
+    0
+  ],
+  "dashboardActivitiesTitle": [
+    "Mes activités",
+    0
+  ],
+  "dashboardCurrentClient": [
+    "Client courant",
+    0
+  ],
+  "dashboardHello": [
+    "Bonjour",
+    0
+  ],
+  "dashboardIntro": [
+    "Bienvenue sur votre espace Stellar. Voici un aperçu de votre activité récente.",
+    0
+  ],
+  "dashboardOneShotsEmpty": [
+    "Aucun One Shot pour le moment.",
+    0
+  ],
+  "dashboardOneShotsTitle": [
+    "Mes One Shots",
+    0
+  ],
+  "dashboardPortfoliosEmpty": [
+    "Aucun portefeuille pour le moment.",
+    0
+  ],
+  "dashboardPortfoliosManageAll": [
+    "Administrez tous",
+    0
+  ],
+  "dashboardPortfoliosTitle": [
+    "Mes portefeuilles",
+    0
+  ],
+  "dashboardProjectsEmpty": [
+    "Aucun projet pour le moment.",
+    0
+  ],
+  "dashboardProjectsTitle": [
+    "Mes projets",
+    0
+  ],
+  "error403Message": [
+    "Vous n'avez pas les droits nécessaires pour accéder à cette page.",
+    0
+  ],
+  "error403Title": [
+    "Accès non autorisé",
+    0
+  ],
+  "error404Message": [
+    "La page que vous cherchez n'existe pas ou a été déplacée.",
+    0
+  ],
+  "error404Title": [
+    "Page introuvable",
+    0
+  ],
+  "errorBackHome": [
+    "Retour à l'accueil",
+    0
+  ],
+  "errorLogout": [
+    "Se déconnecter",
+    0
+  ],
+  "filterBy": [
+    "Filtrer Par",
+    0
+  ],
+  "format": [
+    "Format",
+    0
+  ],
+  "generationStartSucess": [
+    "La génération de la présentation a commencé, elle sera disponible sous peu",
+    0
+  ],
+  "home": [
+    "Accueil",
+    0
+  ],
+  "homeDispatchNoScope": [
+    "Aucun périmètre ne vous a été affecté. Veuillez contacter votre Super Admin pour obtenir une invitation.",
+    0
+  ],
+  "import_btn_menu": [
+    "Import",
+    0
+  ],
+  "import_module_job_1": [
+    "async 2min",
+    0
+  ],
+  "import_module_job_10": [
+    "async 1 semaine",
+    0
+  ],
+  "import_module_job_11": [
+    "async 1 mois",
+    0
+  ],
+  "import_module_job_2": [
+    "async 5min",
+    0
+  ],
+  "import_module_job_3": [
+    "async 15min",
+    0
+  ],
+  "import_module_job_4": [
+    "async 30min",
+    0
+  ],
+  "import_module_job_5": [
+    "async 1h",
+    0
+  ],
+  "import_module_job_6": [
+    "async 4h",
+    0
+  ],
+  "import_module_job_7": [
+    "async 6h",
+    0
+  ],
+  "import_module_job_8": [
+    "async 12h",
+    0
+  ],
+  "import_module_job_9": [
+    "async 1j",
+    0
+  ],
+  "import_sumup_label": [
+    "Voir le Bilan du dernier import",
+    0
+  ],
+  "intent": [
+    "Intention",
+    0
+  ],
+  "jsErrorModalLoad": [
+    "Erreur lors du chargement de la modale.",
+    0
+  ],
+  "labelActivities": [
+    "Activités",
+    0
+  ],
+  "labelAnalyseSynthesise": [
+    "Analyse & synthèse",
+    0
+  ],
+  "labelClient": [
+    "Client",
+    0
+  ],
+  "labelClients": [
+    "Clients",
+    0
+  ],
+  "labelCreatedOn": [
+    "Créé le",
+    0
+  ],
+  "labelDashboard": [
+    "Tableau de bord",
+    0
+  ],
+  "labelPortfolio": [
+    "Portefeuille",
+    0
+  ],
+  "labelPortfolios": [
+    "Portefeuilles",
+    0
+  ],
+  "labelProject": [
+    "Projet",
+    0
+  ],
+  "labelProjects": [
+    "Projets",
+    0
+  ],
+  "length": [
+    "Longueur",
+    0
+  ],
+  "loader_text": [
+    "Génération de la synthèse…",
+    0
+  ],
+  "loading": [
+    "Chargement",
+    0
+  ],
+  "loginEnterCredentials": [
+    "Bienvenue. Entrez vos identifiants pour continuer.",
+    0
+  ],
+  "loginIntro": [
+    "Transformations augmentées<br>\n                    par l'<span class=\"text-primary-emphasis-custom\">IA</span>",
+    0
+  ],
+  "loginOtherMethod": [
+    "Autre méthode de connexion",
+    0
+  ],
+  "loginSubIntro": [
+    "Pilotez vos missions de transformation. Produisez des narratifs structurés,\n                    alignés et directement exploitables.",
+    0
+  ],
+  "menuOneShots": [
+    "One Shots",
+    0
+  ],
+  "methodTipsAxis": [
+    "Travaillez axe par axe. Pour chaque axe, enregistrez les échanges du groupe, générez un transcript, puis une synthèse orientée. Validez la meilleure version de chaque axe avant de lancer l'analyse finale.",
+    0
+  ],
+  "methodTipsTitle": [
+    "Rappel méthodologique",
+    0
+  ],
+  "no": [
+    "Non",
+    0
+  ],
+  "noContribution": [
+    "Aucune contribution enregistrée",
+    0
+  ],
+  "oneShotActionOpen": [
+    "Consulter",
+    0
+  ],
+  "oneShotBackToList": [
+    "Retour à la liste",
+    0
+  ],
+  "oneShotColActions": [
+    "Actions",
+    0
+  ],
+  "oneShotColCreatedOn": [
+    "Date de création",
+    0
+  ],
+  "oneShotColStatus": [
+    "Statut",
+    0
+  ],
+  "oneShotColSubject": [
+    "Nom / Sujet",
+    0
+  ],
+  "oneShotColType": [
+    "Type de One Shot",
+    0
+  ],
+  "oneShotContextHint": [
+    "Facultatif · ce cadrage oriente la lecture des verbatims",
+    0
+  ],
+  "oneShotContextLabel": [
+    "Contexte et population analysée",
+    0
+  ],
+  "oneShotContextPlaceholder": [
+    "Décrivez le changement en cours et la population dont la parole est analysée : périmètre, effectifs, métiers, moment du projet, points de tension déjà connus...",
+    0
+  ],
+  "oneShotCreateSuccess": [
+    "Le One Shot a bien été créé.",
+    0
+  ],
+  "oneShotDocumentsHint": [
+    "ou cliquez pour parcourir (Audio MP3, WAV, M4A · PDF · Word · PowerPoint · Excel, CSV)",
+    0
+  ],
+  "oneShotDocumentsTitle": [
+    "Glissez-déposez vos fichiers ici",
+    0
+  ],
+  "oneShotFailedTitle": [
+    "La génération a échoué. Relancez-la pour compléter le diagnostic.",
+    0
+  ],
+  "oneShotFilterAllTypes": [
+    "Tous les types",
+    0
+  ],
+  "oneShotFilterApply": [
+    "Filtrer",
+    0
+  ],
+  "oneShotFilterTypeLabel": [
+    "Type de One Shot",
+    0
+  ],
+  "oneShotIndexEmpty": [
+    "Votre espace One Shots est encore vide. Créez-en un pour le retrouver ici.",
+    0
+  ],
+  "oneShotIndexEmptyFiltered": [
+    "Aucun One Shot ne correspond au type sélectionné.",
+    0
+  ],
+  "oneShotIndexEmptyTitle": [
+    "Aucun One Shot pour le moment",
+    0
+  ],
+  "oneShotIndexTitle": [
+    "Mes One Shots",
+    0
+  ],
+  "oneShotListTitle": [
+    "Historique",
+    0
+  ],
+  "oneShotLoadingHint": [
+    "Les sept axes sont générés en parallèle, puis l'archétype et la synthèse. Vous pouvez fermer cette page : le résultat vous attendra dans l'historique.",
+    0
+  ],
+  "oneShotLoadingTitle": [
+    "Analyse en cours",
+    0
+  ],
+  "oneShotPollingError": [
+    "Le suivi de l'analyse ne repond pas. L'analyse se poursuit peut-être côté serveur.",
+    0
+  ],
+  "oneShotPollingTimeout": [
+    "L'analyse prend plus de temps que prévu. Rechargez la page pour reprendre le suivi.",
+    0
+  ],
+  "oneShotProgressLabel": [
+    "Blocs générés",
+    0
+  ],
+  "oneShotRefreshPage": [
+    "Recharger la page",
+    0
+  ],
+  "oneShotResultAnalyse": [
+    "Analyse",
+    0
+  ],
+  "oneShotResultFaire": [
+    "Faire — équipe cœur de projet",
+    0
+  ],
+  "oneShotResultFaireFaire": [
+    "Faire faire — relais et ambassadeurs",
+    0
+  ],
+  "oneShotResultScore": [
+    "Score",
+    0
+  ],
+  "oneShotResultTitle": [
+    "Génération",
+    0
+  ],
+  "oneShotResultVerbatim": [
+    "Verbatims illustratifs",
+    0
+  ],
+  "oneShotStatusCompleted": [
+    "Terminé",
+    0
+  ],
+  "oneShotStatusInProgress": [
+    "En cours",
+    0
+  ],
+  "oneShotSubjectEdit": [
+    "Modifier le titre",
+    0
+  ],
+  "oneShotSubjectLabel": [
+    "Titre du diagnostic",
+    0
+  ],
+  "oneShots": [
+    "One Shots",
+    0
+  ],
+  "oneshot_filter_all": [
+    "Tout",
+    0
+  ],
+  "oneshot_filter_aria": [
+    "Filtrer les One Shots",
+    0
+  ],
+  "oneshot_filter_favorites": [
+    "Favoris",
+    0
+  ],
+  "oneshot_filter_transcripts": [
+    "Transcripts",
+    0
+  ],
+  "oneshot_sidebar_title": [
+    "Contributions",
+    0
+  ],
+  "openActivity": [
+    "Ouvrir l'activité",
+    0
+  ],
+  "openAxis": [
+    "Ouvrir l'axe",
+    0
+  ],
+  "openPortfolio": [
+    "Ouvrir le portefeuille",
+    0
+  ],
+  "openProject": [
+    "Ouvrir le projet",
+    0
+  ],
+  "paginationNext": [
+    "Page suivante",
+    0
+  ],
+  "paginationPrevious": [
+    "Page précédente",
+    0
+  ],
+  "paramOne": [
+    "Paramètre 1",
+    0
+  ],
+  "paramThree": [
+    "Paramètre 3",
+    0
+  ],
+  "paramTwo": [
+    "Paramètre 2",
+    0
+  ],
+  "paste_transcript": [
+    "Texte importé",
+    0
+  ],
+  "perceptionDiagnosticArchetypeDescription": [
+    "Description du profil",
+    0
+  ],
+  "perceptionDiagnosticArchetypeName": [
+    "Nom de l'archétype",
+    0
+  ],
+  "perceptionDiagnosticAxesHint": [
+    "Chaque texte est modifiable · le curseur met à jour le graphique",
+    0
+  ],
+  "perceptionDiagnosticAxesTitle": [
+    "Analyse des 7 dimensions",
+    0
+  ],
+  "perceptionDiagnosticCollapseAll": [
+    "Tout replier",
+    0
+  ],
+  "perceptionDiagnosticExpandAll": [
+    "Tout déplier",
+    0
+  ],
+  "perceptionDiagnosticFeedTitle": [
+    "Alimenter le diagnostic",
+    0
+  ],
+  "perceptionDiagnosticGenerate": [
+    "Générer le diagnostic de perception",
+    0
+  ],
+  "perceptionDiagnosticPasteAdd": [
+    "Ajouter ce texte",
+    0
+  ],
+  "perceptionDiagnosticPastePlaceholder": [
+    "Collez ici des notes d'entretien, des verbatims bruts, un compte rendu d'atelier...",
+    0
+  ],
+  "perceptionDiagnosticProfileDrag": [
+    "Faites glisser les points pour ajuster le profil",
+    0
+  ],
+  "perceptionDiagnosticProfileLegend": [
+    "Maturité perçue, de 0 à 100",
+    0
+  ],
+  "perceptionDiagnosticProfileReset": [
+    "Réinitialiser le profil",
+    0
+  ],
+  "perceptionDiagnosticProfileScale": [
+    "Score faible = dimension à traiter en priorité",
+    0
+  ],
+  "perceptionDiagnosticProfileTitle": [
+    "Profil de perception",
+    0
+  ],
+  "perceptionDiagnosticRecordHint.idle": [
+    "Enregistrez un entretien, un atelier ou un focus group",
+    0
+  ],
+  "perceptionDiagnosticRecordHint.recording": [
+    "Enregistrement en cours… cliquez pour arrêter et transcrire",
+    0
+  ],
+  "perceptionDiagnosticRecordHint.transcribing": [
+    "Transcription en cours, merci de patienter…",
+    0
+  ],
+  "perceptionDiagnosticRemoveSource": [
+    "Retirer",
+    0
+  ],
+  "perceptionDiagnosticSource.paste": [
+    "Texte collé",
+    0
+  ],
+  "perceptionDiagnosticSource.record": [
+    "Transcription",
+    0
+  ],
+  "perceptionDiagnosticSourceTitle.paste": [
+    "Texte collé du %date%",
+    0
+  ],
+  "perceptionDiagnosticSourceTitle.record": [
+    "Enregistrement du %date%",
+    0
+  ],
+  "perceptionDiagnosticSources": [
+    "sources",
+    0
+  ],
+  "perceptionDiagnosticSourcesEmpty": [
+    "Aucune source chargée pour le moment.",
+    0
+  ],
+  "perceptionDiagnosticSourcesHint": [
+    "L'analyse croise l'ensemble des sources chargées",
+    0
+  ],
+  "perceptionDiagnosticSourcesTitle": [
+    "Sources chargées",
+    0
+  ],
+  "perceptionDiagnosticStructuring": [
+    "Dimensions structurantes",
+    0
+  ],
+  "perceptionDiagnosticTab.import": [
+    "Import de fichiers",
+    0
+  ],
+  "perceptionDiagnosticTab.paste": [
+    "Coller un texte",
+    0
+  ],
+  "perceptionDiagnosticTab.record": [
+    "Enregistrement direct",
+    0
+  ],
+  "portfolio": [
+    "portefeuille",
+    0
+  ],
+  "portfolioActivityCountPlural": [
+    "%count% activités",
+    0
+  ],
+  "portfolioActivityCountSingular": [
+    "%count% activité",
+    0
+  ],
+  "portfolioContext": [
+    "Contexte",
+    0
+  ],
+  "portfolioDetailProjectsEmpty": [
+    "Aucun projet n'est associé à ce portefeuille pour le moment.",
+    0
+  ],
+  "portfolioDetailProjectsTitle": [
+    "Projets du portefeuille",
+    0
+  ],
+  "portfolioDetailTitle": [
+    "Détail",
+    0
+  ],
+  "portfolioFormEditTitle": [
+    "Éditer le portefeuille",
+    0
+  ],
+  "portfolioFormFooter": [
+    " ",
+    0
+  ],
+  "portfolioFormNewTitle": [
+    "Nouveau portefeuille",
+    0
+  ],
+  "portfolioFormSubtitle": [
+    "Ce contexte sera utilisé par l'IA comme mémoire de fond pour toutes les activités de ce portefeuille.",
+    0
+  ],
+  "portfolioIndexEmpty": [
+    "Aucun portefeuille pour le moment.",
+    0
+  ],
+  "portfolioIndexEmptyTitle": [
+    "Aucun portefeuille",
+    0
+  ],
+  "portfolioIndexProjectPlural": [
+    "%count% projets",
+    0
+  ],
+  "portfolioIndexProjectSingular": [
+    "%count% projet",
+    0
+  ],
+  "portfolioIndexSubtitle": [
+    "Tous les portefeuilles auxquels vous avez accès",
+    0
+  ],
+  "portfolioIndexTitle": [
+    "Portefeuilles",
+    0
+  ],
+  "portfolioProjectActivePlural": [
+    "%count% projets actifs",
+    0
+  ],
+  "portfolioProjectActiveSingular": [
+    "%count% projet actif",
+    0
+  ],
+  "portfolios": [
+    "portefeuilles",
+    0
+  ],
+  "portfoliosLabel": [
+    "Portefeuilles",
+    0
+  ],
+  "project": [
+    "projet",
+    0
+  ],
+  "projectActivityCountPlural": [
+    "%count% activités",
+    0
+  ],
+  "projectActivityCountSingular": [
+    "%count% activité",
+    0
+  ],
+  "projectContext": [
+    "Contexte",
+    0
+  ],
+  "projectDetailActivitiesEmpty": [
+    "Aucune activité n'est associé à ce projet pour le moment",
+    0
+  ],
+  "projectDetailActivitiesTitle": [
+    "Activités",
+    0
+  ],
+  "projectDetailTitle": [
+    "Détail",
+    0
+  ],
+  "projectFormEditTitle": [
+    "Éditer le projet",
+    0
+  ],
+  "projectFormFooter": [
+    " ",
+    0
+  ],
+  "projectFormNewTitle": [
+    "Nouveau projet",
+    0
+  ],
+  "projectFormSubtitle": [
+    "Ce contexte sera utilisé par l'IA comme mémoire de fond pour toutes les activités de ce projet.",
+    0
+  ],
+  "projectIndexActivitiesPlural": [
+    "%count% activités",
+    0
+  ],
+  "projectIndexActivitiesSingular": [
+    "%count% activité",
+    0
+  ],
+  "projectIndexEmpty": [
+    "Aucun projet pour le moment.",
+    0
+  ],
+  "projectIndexEmptyTitle": [
+    "Aucun projet",
+    0
+  ],
+  "projectIndexSubtitle": [
+    "Tous les projets auxquels vous avez accès",
+    0
+  ],
+  "projectIndexTitle": [
+    "Projets",
+    0
+  ],
+  "projects": [
+    "projets",
+    0
+  ],
+  "projectsLabel": [
+    "Projets",
+    0
+  ],
+  "save": [
+    "Enregistrer",
+    0
+  ],
+  "settingsUploadCreateForbidden": [
+    "Ligne %%1%% : création de paramètre interdit",
+    0
+  ],
+  "settingsUploadFormatUnknown": [
+    "Ligne %%1%% : format incorrect",
+    0
+  ],
+  "settingsUploadUpdateForbidden": [
+    "Ligne %%1%% : mise à jour de paramètre interdit",
+    0
+  ],
+  "sidebarAriaLabel": [
+    "Navigation de la barre latérale",
+    0
+  ],
+  "sidebarCollapse": [
+    "Réduire la barre latérale",
+    0
+  ],
+  "sidebarExpand": [
+    "Développer la barre latérale",
+    0
+  ],
+  "sidebarLanguageAria": [
+    "Changer de langue",
+    0
+  ],
+  "skPasswordStrengthExcellent": [
+    "Excellent",
+    0
+  ],
+  "skPasswordStrengthMedium": [
+    "Moyen",
+    0
+  ],
+  "skPasswordStrengthWeak": [
+    "Faible",
+    0
+  ],
+  "statusCreatedRecently": [
+    "Créé récemment",
+    0
+  ],
+  "statusDatesToBeDefined": [
+    "Dates à définir",
+    0
+  ],
+  "statusInProgress": [
+    "En cours",
+    0
+  ],
+  "synthesis": [
+    "Synthèse",
+    0
+  ],
+  "workAxis": [
+    "Axes de travail",
+    0
+  ],
+  "workspaceEmptyTitle": [
+    "Espace de travail vide",
+    0
+  ],
+  "workspaceTitle": [
+    "Espace de travail",
+    0
+  ],
+  "yes": [
+    "Oui",
+    0
+  ]
+}

@@ -1,7 +1,7 @@
 name: ${PROJECT_CODE:-sca}-front
 services:
   web:
-    image: stellar-front:0.0.15
+    image: stellar-front:0.0.16
     build:
       context: .
       args:

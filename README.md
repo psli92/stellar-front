@@ -1,4 +1,4 @@
-# Stellar Front — 0.0.15
+# Stellar Front — 0.0.16
 
 Socle statique HTML/CSS/JavaScript, servi par Nginx. La connexion par mot de passe est disponible ; le dashboard et la lecture des portfolios sont disponibles. Ce dépôt ne contient ni PHP, ni Symfony, ni Redis, ni compte technique.
 
@@ -194,3 +194,31 @@ La régénération revient aux paramètres sans déclencher de traitement automa
 
 Tests sur API simulée, avec captures des écrans axe, sélection, paramètres et résultats.
 Aucun changement de contrat API, de droits ou d’import SK.
+
+## One shots — 0.0.16
+
+Routes du front historique : `/oneshots`, `/one-shots/form`, `/oneshots/{id}` et
+`/oneshots/{id}/result`. La liste conserve filtres, pagination et actions au survol.
+La création reprend les cartes des types, leur disponibilité et leurs icônes.
+
+Transcription Synthèse : contributions texte, microphone et fichiers audio/vidéo,
+version originale/corrigée, favoris, formats de synthèse, présentation différée et téléchargement
+avec le JWT utilisateur. Le suivi des présentations reprend après rechargement sans relancer
+la génération. Les formats sont chargés sur toutes les pages du groupe synthesisOutput.
+
+Diagnostic : nom, documents, texte, microphone, contexte, retrait des sources, lancement
+explicite puis suivi. Résultats : radar interactif historique, scores, archétype, synthèse,
+analyses, actions et verbatims modifiables. Les corrections respectent le contrat strict de PUT
+(results sérialisés en JSON, champs absents omis, aucun null ajouté).
+
+Seuls les paramètres individuels nécessaires sont lus via SK avec le JWT utilisateur.
+Aucun chargement du groupe presentonsVars ni de ses secrets. Si le drapeau administratif
+show_presenton_btn est inaccessible (403), le bouton de présentation reste proposé ;
+le backend contrôle les droits et la configuration à chaque demande. Un drapeau lisible
+à une valeur autre que yes masque le bouton. Les paramètres de score/suivi absents utilisent
+les bornes 0–100, seuils 40/70, suivi 2 s et expiration 10 min.
+
+Validation : `node tests/oneshot-browser.mjs` (API, fichiers et traitements simulés),
+avec captures liste/création/contributions/diagnostic et contrôles des payloads, refus,
+rechargements, téléchargement et affichage mobile. Les traitements MaaS/Presenton réels
+restent à vérifier sur le déploiement. Aucun import SK supplémentaire.

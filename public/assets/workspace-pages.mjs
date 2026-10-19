@@ -1,3 +1,4 @@
+import {oneShotPath,loadOneShot,renderOneShot} from './oneshots.mjs';
 import {activityPath,loadActivityExtras} from './activity-api.mjs';
 import {renderAxis} from './activity-contributions.mjs';
 import {enhanceActivity,renderNarrative} from './activity-narrative.mjs';
@@ -7,9 +8,10 @@ import {loadPortfolios,renderPortfolios} from './portfolios.mjs';
 import {allowedForm,node} from './workspace-forms.mjs';
 import {activityWizard} from './activity-wizard.mjs';
 import {icon} from './icons.mjs';
-export const workspacePath=path=>activityPath(path)||/^\/(?:portfolios|projects|activities)(?:\/[1-9]\d*)?$/.test(path)||/^\/portfolios\/[1-9]\d*\/projects\/[1-9]\d*\/activity\/form$/.test(path);
+export const workspacePath=path=>oneShotPath(path)||activityPath(path)||/^\/(?:portfolios|projects|activities)(?:\/[1-9]\d*)?$/.test(path)||/^\/portfolios\/[1-9]\d*\/projects\/[1-9]\d*\/activity\/form$/.test(path);
 const valid=item=>item&&Number.isSafeInteger(item.id)&&item.id>0&&typeof item.name==='string';
 export async function loadWorkspace(session,language,path,options){
+ if(oneShotPath(path))return loadOneShot(session,language,path,options);
  if(!workspacePath(path))throw new ApiError('Adresse invalide.');
  const special=activityPath(path);const clean=path.split('?')[0];const parts=clean.split('/'),wizard=path.endsWith('/activity/form'),kind=special?'activities':wizard?'projects':parts[1];let data;
  if(kind==='portfolios')data=await loadPortfolios(session,language,path,options);
@@ -29,6 +31,7 @@ export function workspaceBrowserTitle(page,labels={}){
  return data.name+' - '+(kind==='activities'?t('ActivityType.'+data.type?.name+'.title',data.type?.name||'Activité'):t(entity+'DetailTitle',entity==='portfolio'?'Portefeuille':'Projet'));
 }
 export function renderWorkspace(content,page,options){
+ if(page.oneShot)return renderOneShot(content,page,options);
  const {language,navigate,openForm,session,signal,onSaving,onSaved,onExpired}=options;const labels={...options.labels,...page.labels};const {kind,data,forms,wizard}=page;
  const text=(key,fallback)=>labels[key]||fallback;
  const browserTitle=workspaceBrowserTitle(page,labels);

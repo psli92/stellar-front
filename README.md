@@ -1,4 +1,4 @@
-# Stellar Front — 0.0.8
+# Stellar Front — 0.0.9
 
 Socle statique HTML/CSS/JavaScript, servi par Nginx. La connexion par mot de passe est disponible ; le dashboard et la lecture des portfolios sont disponibles. Ce dépôt ne contient ni PHP, ni Symfony, ni Redis, ni compte technique.
 

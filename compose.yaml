@@ -1,8 +1,11 @@
 name: ${PROJECT_CODE:-sca}-front
 services:
   web:
-    image: stellar-front:0.0.5
-    build: .
+    image: stellar-front:0.0.6
+    build:
+      context: .
+      args:
+        SK_API_ROOT: ${SK_API_ROOT:-v1}
     container_name: ${PROJECT_CODE:-sca}-web
     restart: unless-stopped
     ports:

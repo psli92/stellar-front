@@ -12,8 +12,14 @@ const retry = byId('retry');
 let storage;
 try { storage = window.sessionStorage; } catch { /* Memory-only login when storage is disabled. */ }
 const client = new URLSearchParams(location.search).get('client') || '';
-let generation = 0, busy = false, ready = false, active = null, expiryTimer, publicLabels = {};
-const dashboardView = dashboard(byId('dashboard'), {onClose: closeSession, onExpired: message => {closeSession();showError(message);}, onSession: session => {active=session;try{storage?.setItem('stellar:user-session:v1',JSON.stringify(session));}catch{}}});
+let generation = 0, busy = false, ready = false, active = null, expiryTimer, publicLabels = {}, availableLanguages = [];
+const dashboardView = dashboard(byId('dashboard'), {onClose: closeSession, onLanguage: changeLanguage, onExpired: message => {closeSession();showError(message);}, onSession: session => {active=session;try{storage?.setItem('stellar:user-session:v1',JSON.stringify(session));}catch{}}});
+async function changeLanguage(code){
+ const before=active;if(!before)return;
+ try{const data=await loadBootstrap({language:code,client,storage});if(active!==before)return;publicLabels=data.labels;availableLanguages=data.languages;select.value=data.language;document.documentElement.lang=data.language.toLowerCase();try{storage?.setItem('stellar:language',data.language);}catch{}dashboardView.show(active,data.language,publicLabels,availableLanguages);}
+ catch{throw new Error('Changement de langue indisponible. Réessayez.');}
+}
+try{const preferred=storage?.getItem('stellar:language');if(/^[A-Z]{2,3}$/.test(preferred||''))select.value=preferred;}catch{}
 function showError(message) { error.textContent = message; error.hidden = !message; }
 function closeSession() {
   clearInterval(expiryTimer); clearSession(storage); active = null;
@@ -23,8 +29,8 @@ function closeSession() {
 function connected(session) {
   active = session;
   byId('password').value = '';
-  byId('login-layout').hidden=true;history.replaceState(null,'','/dashboard'+location.search);
-  dashboardView.show(session,select.value,publicLabels);
+  byId('login-layout').hidden=true;if(!/^\/portfolios(?:\/[1-9]\d*)?$/.test(location.pathname))history.replaceState(null,'','/dashboard'+location.search);
+  dashboardView.show(session,select.value,publicLabels,availableLanguages);
   clearInterval(expiryTimer);
   // Recheck periodically, including after the tab resumes; no automatic refresh in this phase.
   expiryTimer = setInterval(() => {
@@ -39,7 +45,7 @@ async function start(force = false) {
   try {
     const data = await loadBootstrap({language: select.value, client, storage, force});
     if (run !== generation) return;
-    publicLabels = data.labels;
+    publicLabels = data.labels; availableLanguages = data.languages;
     document.documentElement.lang = data.language.toLowerCase();
     document.title = data.labels.LoginPageTitle || 'Connexion · Stellar';
     document.querySelectorAll('[data-label]').forEach(node => {

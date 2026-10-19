@@ -32,5 +32,7 @@ export function formatDate(value,language='FR'){
   iso=iso.replace(' ','T').replace(/\.\d+$/,'')+'Z';
  }
  const date=new Date(iso);if(Number.isNaN(date.getTime()))return '';
- return new Intl.DateTimeFormat(language.toLowerCase(),{dateStyle:'short',timeZone:'Europe/Paris'}).format(date);
+ return new Intl.DateTimeFormat(language.toLowerCase(),{dateStyle:'long',timeZone:'Europe/Paris'}).format(date);
 }
+
+export function formatCount(count,singular,plural,labels={}){const key=count>1?plural:singular;const defaults={project:"projet",projects:"projets",activity:"activité",activities:"activités"};return count+" "+(labels[key]||defaults[key]||key);}

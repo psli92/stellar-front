@@ -13,3 +13,12 @@ button.login-inline-link{border:0;background:none;padding:0}
 .detail-dialog{width:min(640px,calc(100% - 32px));max-height:80vh;border:1px solid var(--border-subtle);border-radius:var(--r-lg);padding:var(--s-6);color:var(--text-primary)}
 .detail-dialog::backdrop{background:#0e0e1780}.detail-dialog header{display:flex;justify-content:space-between;gap:16px}.detail-dialog dd{white-space:pre-wrap}.detail-dialog dt{font-weight:600}
 .svg-inline--fa{display:inline-block;height:1em;overflow:visible;vertical-align:-.125em;fill:currentColor}
+
+/* Same breadcrumb semantics as the original template; no marker before the first item. */
+.app-breadcrumb>.breadcrumb-item:first-child::before{content:none}
+.mobile-menu-toggle{display:none}
+@media(width <= 991.98px){
+ .mobile-menu-toggle{display:inline-flex}
+ .app-sidebar.mobile-open{display:flex;position:fixed;inset:0 auto 0 0;width:248px;z-index:1100;box-shadow:var(--shadow-2)}
+}
+.language-selector .sidebar-selector__menu.show{top:auto;bottom:0}

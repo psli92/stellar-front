@@ -1,6 +1,6 @@
-# Stellar Front — 0.0.5
+# Stellar Front — 0.0.6
 
-Socle statique HTML/CSS/JavaScript, servi par Nginx. La connexion par mot de passe est disponible ; les écrans métier restent à porter. Ce dépôt ne contient ni PHP, ni Symfony, ni Redis, ni compte technique.
+Socle statique HTML/CSS/JavaScript, servi par Nginx. La connexion par mot de passe est disponible ; le dashboard et la lecture des portfolios sont disponibles. Ce dépôt ne contient ni PHP, ni Symfony, ni Redis, ni compte technique.
 
 Navigateur → `${PROJECT_CODE}-web` : `/` sert les fichiers ; `/api/…` relaie vers `sk-route:80`
 en retirant **uniquement** `/api/`. Exemples : `/api/FR/public/bootstrap` → `/FR/public/bootstrap`,
@@ -87,3 +87,36 @@ Les styles Bootstrap et Stellar historiques sont conservés dans assets/vendor e
 avec leur ordre de chargement original. Aucune reconstruction approximative des panneaux ou des contrôles.
 Les icônes proviennent du Font Awesome livré avec le StarterKit UI, les trois graisses Inter sont locales.
 Le sélecteur client et le menu utilisateur reprennent la présentation historique ; les appels API restent inchangés.
+
+## Portfolios — 0.0.6
+
+Liste `/portfolios` et détail `/portfolios/{id}` : reprise des templates historiques
+shared/_index, portfolio/detail et des cartes portfolio/projet avec les CSS du ZIP.
+Navigation depuis le dashboard, fil d’Ariane, liens directs, rechargement et historique navigateur.
+Le menu retrouve One shots (lecture simple existante, écran complet à porter).
+Les cartes projets ouvrent encore la lecture simple existante ; les pages projets et les formulaires
+création/modification ne font pas partie de cette étape de lecture.
+
+Les appels utilisent le JWT utilisateur et aucun cache métier. La liste GET /{language}/portfolios
+est filtrée par le client courant côté API. Un détail doit appartenir à cette liste avant lecture.
+Le contexte est resynchronisé via le dashboard ; changer de client depuis un portfolio ramène à la liste.
+Les réponses périmées sont écartées lors des navigations/changements de client.
+Aucun nouvel import ni modification SK/Stellar nécessaire.
+
+Les dates sont affichées en toutes lettres et les compteurs utilisent les clés singulier/pluriel
+historiques (pluriel uniquement au-delà de 1), y compris dans le dashboard.
+
+### Corrections visuelles et navigation
+
+Les widgets retrouvent overflow-y-auto du template historique (listes longues défilantes).
+Le bouton Actualiser a été retiré, le fil d’Ariane reprend sa structure originale.
+Les bulles One shots sont pleines ; les petites cartes du header utilisent capitalize et menuOneShots.
+Le sélecteur de langue reprend les langues du bootstrap, recharge les libellés et utilise la langue
+choisie pour les API et dates. La préférence reste dans la session de cet onglet.
+
+Les logos clients (logoSmallKey) sont lus avec le JWT utilisateur depuis SK Asset, via le proxy même origine,
+puis affichés comme images blob temporaires, révoquées au changement de contexte/déconnexion.
+Les initiales restent le repli en l’absence de logo ou de droit de lecture.
+Configurer SK_API_ROOT dans .env avec le même préfixe que Stellar/SK (v1 par défaut, par exemple vA
+si c’est le préfixe de votre installation), puis reconstruire le front avec setup-front.sh.
+Aucun compte de service ni jeton dans une URL d’image.

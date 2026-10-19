@@ -48,4 +48,3 @@ L'authentification utilisateur et le refresh feront l'objet des prochaines étap
 
 `node --test tests/bootstrap.test.mjs` ; `python tests/proxy.py` vérifie le proxy réel avec Docker.
 La CI exécute les deux ; le test proxy n'a besoin ni de SK, ni d'un compte, ni de données métier.
-

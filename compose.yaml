@@ -1,0 +1,25 @@
+name: ${PROJECT_CODE:-sca}-front
+services:
+  web:
+    image: stellar-front:0.0.1
+    build: .
+    container_name: ${PROJECT_CODE:-sca}-web
+    restart: unless-stopped
+    ports:
+      - "${FRONT_BIND:-127.0.0.1}:${FRONT_PORT:-8080}:80"
+    networks: [sk]
+    read_only: true
+    tmpfs:
+      - /var/cache/nginx
+      - /var/run
+      - /tmp
+    security_opt: [no-new-privileges:true]
+    healthcheck:
+      test: [CMD-SHELL, "wget -q -O /dev/null http://127.0.0.1/health/ready"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+networks:
+  sk:
+    external: true
+    name: ${SK_NETWORK:-${PROJECT_CODE:-sca}-network}

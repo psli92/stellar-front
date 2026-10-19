@@ -31,7 +31,7 @@ export function renderWorkspace(content,page,options){
  else{
   title=list?text(kind,kind==='projects'?'Projets':'Activités'):data.name;content.replaceChildren();
   const region=node('div','app-region'),head=node('div','sk-page-head'),main=node('div','sk-page-head__main');head.append(main);region.append(head);content.append(region);
-  if(!list)main.append(node('p','sk-page-head__eyebrow',kind==='projects'?text('project','Projet'):text('ActivityType.'+data.type?.name+'.title',data.type?.name||'Activité')));
+  if(!list)main.append(node('p','sk-page-head__eyebrow',kind==='projects'?[text('project','Projet'),data.portfolio?.client?.name].filter(Boolean).join(' · '):text('ActivityType.'+data.type?.name+'.title',data.type?.name||'Activité')));
   main.append(node('h1','sk-page-head__title',title));
   const items=list?data:kind==='projects'?data.activities||[]:data.type?.axes||data.axes||[];
   main.append(node('p','sk-page-head__meta',!list&&kind==='activities'?[data.project?.name,parent?.name,formatDate(data.date,language),data.workingLanguage].filter(Boolean).join(' · '):items.length+' '+text(list?kind:items.length>1?'activities':'activity',list?(kind==='projects'?'projets':'activités'):items.length>1?'activités':'activité')));
@@ -42,7 +42,7 @@ export function renderWorkspace(content,page,options){
    const card=node('article','sk-card'+(axis?' sk-card--axis':' sk-card--linked'));card.append(node('p','sk-card__eyebrow',axis?text('axis','Axe')+' '+(index+1):activity?text('ActivityType.'+item.type?.name+'.title',item.type?.name||text('activity','Activité')):text('project','Projet')));
    const h=node(list?'h2':'h3','sk-card__title');if(axis)h.textContent=text('Axis.'+item.name+'.title',item.name);else{const a=node('a','sk-card__link',item.name);a.href=(activity?'/activities/':'/projects/')+item.id;a.addEventListener('click',e=>{if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();navigate(a.pathname);});h.append(a);}card.append(h);
    if(axis)card.append(node('p','sk-card__body',text('Axis.'+item.name+'.description','')));
-   else{const footer=node('div','sk-card__footer');footer.append(node('span','',activity?formatDate(item.date,language):(item.activities?.length||0)+' '+text((item.activities?.length||0)>1?'activities':'activity',(item.activities?.length||0)>1?'activités':'activité')));if(activity&&item.workingLanguage)footer.append(node('span','sk-badge sk-badge--neutral',item.workingLanguage));card.append(footer);}grid.append(card);
+   else{const footer=node('div','sk-card__footer');const date=node('span');if(activity)date.append(icon('calendar'),document.createTextNode(formatDate(item.date,language)));else date.textContent=(item.activities?.length||0)+' '+text((item.activities?.length||0)>1?'activities':'activity',(item.activities?.length||0)>1?'activités':'activité');footer.append(date);if(activity&&item.workingLanguage){const badge=node('span','sk-badge sk-badge--neutral');badge.append(icon('language'),node('span','visually-hidden',text('ActivityForm.workingLanguage.label','Langue')+' :'),document.createTextNode(item.workingLanguage.toUpperCase()));footer.append(badge);}card.append(footer);}grid.append(card);
   }}
   if(kind==='activities'&&!list)body.append(node('p','sk-help mt-4','Les contributions et les traitements IA seront intégrés à l’étape suivante.'));
  }

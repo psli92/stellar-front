@@ -1,4 +1,4 @@
-# Stellar Front — 0.0.4
+# Stellar Front — 0.0.5
 
 Socle statique HTML/CSS/JavaScript, servi par Nginx. La connexion par mot de passe est disponible ; les écrans métier restent à porter. Ce dépôt ne contient ni PHP, ni Symfony, ni Redis, ni compte technique.
 
@@ -80,3 +80,10 @@ Le backend reste seul responsable des droits ; 401 ferme la session locale, 403/
 Les liens ouvrent une lecture simple via les API métier, sans prétendre remplacer les écrans d'édition à venir.
 La page de connexion reprend les arrondis et deux accès secondaires historiques ; ceux-ci annoncent
 explicitement que leurs parcours ne sont pas encore portés. Aucun appel factice n'est envoyé.
+
+## Fidélité graphique — 0.0.5
+
+Les styles Bootstrap et Stellar historiques sont conservés dans assets/vendor et assets/legacy,
+avec leur ordre de chargement original. Aucune reconstruction approximative des panneaux ou des contrôles.
+Les icônes proviennent du Font Awesome livré avec le StarterKit UI, les trois graisses Inter sont locales.
+Le sélecteur client et le menu utilisateur reprennent la présentation historique ; les appels API restent inchangés.

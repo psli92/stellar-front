@@ -1,0 +1,452 @@
+:root {
+    --ctl-radius: var(--r-full, 999px);
+    --ctl-radius-soft: var(--r-lg, 16px);
+
+    --ctl-icon-gap: 8px;
+
+    --ctl-h-sm: 2.2rem;
+    --ctl-h: 2.25rem;
+    --ctl-h-lg: 2.75rem;
+
+    --ctl-btn-pad-y-sm: 0.3125rem;
+    --ctl-btn-pad-y: 0.5rem;
+    --ctl-btn-pad-y-lg: 0.625rem;
+    --ctl-btn-pad-x-sm: 0.875rem;
+    --ctl-btn-pad-x: 1.25rem;
+    --ctl-btn-pad-x-lg: 1.625rem;
+
+    --ctl-field-pad-y-sm: 0.3125rem;
+    --ctl-field-pad-y: 0.4375rem;
+    --ctl-field-pad-y-lg: 0.625rem;
+    --ctl-field-pad-x-sm: 0.875rem;
+    --ctl-field-pad-x: 1.125rem;
+    --ctl-field-pad-x-lg: 1.375rem;
+
+    --ctl-select-pad-end: 2.5rem;
+    --ctl-select-pad-end-sm: 2.25rem;
+    --ctl-select-pad-end-lg: 2.75rem;
+
+    --ctl-trigger-bg: var(--surface-0, #fff);
+    --ctl-trigger-border: var(--border-subtle, var(--border-color, rgb(30 30 80 / 10%)));
+    --ctl-trigger-bg-open: var(--surface-1, #f6f6fa);
+    --ctl-trigger-border-open: var(--border-strong, var(--stellar-blue, #3535e8));
+
+    --ctl-menu-gap: 8px;
+    --ctl-menu-radius: var(--r-lg, 16px);
+    --ctl-menu-bg: var(--surface-1, #fff);
+    --ctl-menu-border: var(--border-default, var(--border-color, rgb(30 30 80 / 12%)));
+    --ctl-menu-shadow: var(--shadow-pop, 0 1px 2px rgb(14 14 23 / 8%), 0 12px 32px -8px rgb(14 14 23 / 18%));
+    --ctl-menu-pad-y: 0.25rem;
+    --ctl-menu-max-h: 320px;
+
+    --ctl-option-pad-y: 0.375rem;
+    --ctl-option-pad-x: 0.75rem;
+    --ctl-option-fs: var(--fs-200, 0.875rem);
+    --ctl-option-bg-hover: var(--surface-2, #eeeef4);
+    --ctl-option-fg: var(--text-primary, #0e0e17);
+    --ctl-option-fg-active: var(--text-on-brand, #fff);
+
+    --ctl-motion: var(--motion-base, 160ms) var(--ease, cubic-bezier(0.2, 0, 0.13, 1));
+    --ctl-motion-fast: var(--motion-fast, 100ms) var(--ease, cubic-bezier(0.2, 0, 0.13, 1));
+    --ctl-menu-motion: 140ms var(--ease, cubic-bezier(0.2, 0, 0.13, 1));
+    --ctl-menu-shift: 6px;
+
+    --ctl-chevron-size: 0.7rem;
+    --ctl-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%231b1b26' d='M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z'/%3E%3C/svg%3E");
+    --ctl-chevron-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z'/%3E%3C/svg%3E");
+
+    --ctl-accent: var(--brand-500, var(--stellar-blue, #3535e8));
+    --ctl-ring-w: 3px;
+    --ctl-ring: color-mix(in srgb, var(--ctl-accent) 18%, transparent);
+    --ctl-outline: var(--focus-ring, #0e0e17);
+    --ctl-outline-w: var(--focus-w, 2px);
+    --ctl-outline-offset: var(--focus-offset, 2px);
+    --ctl-outline-halo: var(--focus-ring-halo, #fff);
+}
+
+.btn {
+    --bs-btn-border-radius: var(--ctl-radius);
+    --bs-btn-border-radius-sm: var(--ctl-radius);
+    --bs-btn-border-radius-lg: var(--ctl-radius);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--ctl-icon-gap);
+    min-height: var(--ctl-h);
+    padding: var(--ctl-btn-pad-y) var(--ctl-btn-pad-x);
+    white-space: nowrap;
+}
+
+.btn-sm,
+.btn-group-sm > .btn {
+    --bs-btn-border-radius: var(--ctl-radius);
+
+    min-height: var(--ctl-h-sm);
+    padding: var(--ctl-btn-pad-y-sm) var(--ctl-btn-pad-x-sm);
+}
+
+.btn-lg,
+.btn-group-lg > .btn {
+    --bs-btn-border-radius: var(--ctl-radius);
+
+    min-height: var(--ctl-h-lg);
+    padding: var(--ctl-btn-pad-y-lg) var(--ctl-btn-pad-x-lg);
+}
+
+.btn-icon {
+    width: var(--ctl-h);
+    min-width: var(--ctl-h);
+    padding-inline: 0;
+}
+
+.btn-icon.btn-sm {
+    width: var(--ctl-h-sm);
+    min-width: var(--ctl-h-sm);
+}
+
+.btn-icon.btn-lg {
+    width: var(--ctl-h-lg);
+    min-width: var(--ctl-h-lg);
+}
+
+.btn-link {
+    min-height: auto;
+    padding-inline: 0;
+}
+
+.btn-close {
+    border-radius: var(--ctl-radius);
+}
+
+.sk-array-field-remove-btn {
+    border-radius: var(--ctl-radius);
+}
+
+.form-control,
+.form-select {
+    min-height: var(--ctl-h);
+    padding: var(--ctl-field-pad-y) var(--ctl-field-pad-x);
+    border-radius: var(--ctl-radius);
+}
+
+.form-select {
+    padding-inline-end: var(--ctl-select-pad-end);
+    background-image: var(--ctl-chevron);
+    background-repeat: no-repeat;
+    background-position: right var(--ctl-field-pad-x) center;
+    background-size: var(--ctl-chevron-size);
+}
+
+.form-control-sm,
+.form-select-sm {
+    min-height: var(--ctl-h-sm);
+    padding: var(--ctl-field-pad-y-sm) var(--ctl-field-pad-x-sm);
+    border-radius: var(--ctl-radius);
+}
+
+.form-select-sm {
+    padding-inline-end: var(--ctl-select-pad-end-sm);
+    background-position: right var(--ctl-field-pad-x-sm) center;
+}
+
+.form-control-lg,
+.form-select-lg {
+    min-height: var(--ctl-h-lg);
+    padding: var(--ctl-field-pad-y-lg) var(--ctl-field-pad-x-lg);
+    border-radius: var(--ctl-radius);
+}
+
+.form-select-lg {
+    padding-inline-end: var(--ctl-select-pad-end-lg);
+    background-position: right var(--ctl-field-pad-x-lg) center;
+}
+
+.input-group > :first-child,
+.input-group > .form-control:first-child,
+.input-group > .form-select:first-child {
+    border-start-start-radius: var(--ctl-radius);
+    border-end-start-radius: var(--ctl-radius);
+}
+
+.input-group > :last-child,
+.input-group > .form-control:last-child,
+.input-group > .form-select:last-child {
+    border-start-end-radius: var(--ctl-radius);
+    border-end-end-radius: var(--ctl-radius);
+}
+
+.input-group > :first-child.form-control,
+.input-group > :first-child.form-select,
+.input-group > :first-child.input-group-text {
+    padding-inline-start: var(--ctl-field-pad-x);
+}
+
+.input-group > :last-child.input-group-text {
+    padding-inline-end: var(--ctl-field-pad-x);
+}
+
+textarea.form-control,
+textarea.form-control-sm,
+textarea.form-control-lg {
+    border-radius: var(--ctl-radius-soft);
+}
+
+.sk-otp__input,
+.code-input {
+    padding-inline: 0;
+    border-radius: var(--ctl-radius-soft);
+}
+
+.form-select,
+.select2-container .select2-selection--single,
+.select2-container .select2-selection--multiple {
+    background-color: var(--ctl-trigger-bg);
+    border: 1px solid var(--ctl-trigger-border);
+    cursor: pointer;
+    transition: background-color var(--ctl-motion),
+                border-color var(--ctl-motion);
+}
+
+.form-select:hover,
+.form-select:focus,
+.select2-container .select2-selection--single:hover,
+.select2-container .select2-selection--multiple:hover,
+.select2-container--open .select2-selection--single,
+.select2-container--open .select2-selection--multiple,
+.select2-container--focus .select2-selection--single,
+.select2-container--focus .select2-selection--multiple {
+    background-color: var(--ctl-trigger-bg-open);
+    border-color: var(--ctl-trigger-border-open);
+}
+
+.form-select:disabled,
+.select2-container--disabled .select2-selection--single,
+.select2-container--disabled .select2-selection--multiple {
+    cursor: default;
+    background-color: var(--ctl-trigger-bg);
+    border-color: var(--ctl-trigger-border);
+}
+
+.select2-container .select2-selection--single,
+.select2-container .select2-selection--multiple {
+    min-height: var(--ctl-h);
+    padding-inline: var(--ctl-field-pad-x);
+    border-radius: var(--ctl-radius);
+}
+
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
+.select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple,
+.select2-container--default.select2-container--open.select2-container--above .select2-selection--single,
+.select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple {
+    border-radius: var(--ctl-radius);
+}
+
+.select2-container .select2-selection--single .select2-selection__arrow {
+    top: 0;
+    right: var(--ctl-field-pad-x);
+    width: var(--ctl-chevron-size);
+    height: 100%;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b,
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    top: 50%;
+    left: 50%;
+    width: var(--ctl-chevron-size);
+    height: var(--ctl-chevron-size);
+    margin: 0;
+    border: 0;
+    background-color: currentColor;
+    transform: translate(-50%, -50%);
+    -webkit-mask: var(--ctl-chevron-mask) center / contain no-repeat;
+    mask: var(--ctl-chevron-mask) center / contain no-repeat;
+}
+
+.dropdown-toggle::after {
+    width: var(--ctl-chevron-size);
+    height: var(--ctl-chevron-size);
+    margin-left: var(--ctl-icon-gap);
+    vertical-align: -0.05em;
+    border: 0;
+    background-color: currentColor;
+    -webkit-mask: var(--ctl-chevron-mask) center / contain no-repeat;
+    mask: var(--ctl-chevron-mask) center / contain no-repeat;
+}
+
+.select2-container .select2-selection--multiple .select2-selection__choice {
+    border-radius: var(--ctl-radius);
+}
+
+.select2-search--dropdown .select2-search__field {
+    padding-inline: var(--ctl-field-pad-x-sm);
+    border-radius: var(--ctl-radius);
+}
+
+.select2-dropdown,
+.select2-container--open .select2-dropdown--below,
+.select2-container--open .select2-dropdown--above {
+    padding-block: var(--ctl-menu-pad-y);
+    background: var(--ctl-menu-bg);
+    border: 1px solid var(--ctl-menu-border);
+    border-radius: var(--ctl-menu-radius);
+    box-shadow: var(--ctl-menu-shadow);
+    overflow: hidden;
+}
+
+.select2-container--open .select2-dropdown--below {
+    margin-top: var(--ctl-menu-gap);
+}
+
+.select2-container--open .select2-dropdown--above {
+    margin-top: calc(var(--ctl-menu-gap) * -1);
+}
+
+.select2-results {
+    display: block;
+    overflow: hidden;
+}
+
+.select2-container .select2-results__options {
+    max-height: var(--ctl-menu-max-h);
+    border-radius: inherit;
+}
+
+.select2-container .select2-results__option {
+    padding: var(--ctl-option-pad-y) var(--ctl-option-pad-x);
+    font-size: var(--ctl-option-fs);
+    border-radius: 0;
+}
+
+.select2-container--default .select2-results__option--highlighted,
+.select2-container--default .select2-results__option--highlighted[aria-selected],
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    color: inherit;
+    background-color: var(--ctl-option-bg-hover);
+}
+
+.select2-container--default .select2-results__option--selected,
+.select2-container--default .select2-results__option[aria-selected="true"],
+.select2-container--default .select2-results__option--selected.select2-results__option--highlighted,
+.select2-container--default .select2-results__option--selected.select2-results__option--selectable,
+.select2-container--default .select2-results__option--highlighted[aria-selected="true"] {
+    color: var(--ctl-option-fg);
+    background-color: var(--surface-2);
+}
+
+.select2-container--default .select2-results__option--selected.select2-results__option--selectable {
+    color: var(--ctl-option-fg-active);
+    background-color: var(--ctl-accent);
+}
+
+.dropdown-menu {
+    --bs-dropdown-bg: var(--ctl-menu-bg);
+    --bs-dropdown-border-color: var(--ctl-menu-border);
+    --bs-dropdown-border-radius: var(--ctl-menu-radius);
+    --bs-dropdown-box-shadow: var(--ctl-menu-shadow);
+    --bs-dropdown-padding-y: var(--ctl-menu-pad-y);
+    --bs-dropdown-font-size: var(--ctl-option-fs);
+    --bs-dropdown-item-padding-y: var(--ctl-option-pad-y);
+    --bs-dropdown-item-padding-x: var(--ctl-option-pad-x);
+    --bs-dropdown-link-hover-bg: var(--ctl-option-bg-hover);
+    --bs-dropdown-link-active-bg: var(--ctl-accent);
+    --bs-dropdown-link-active-color: var(--ctl-option-fg-active);
+    --bs-dropdown-spacer: var(--ctl-menu-gap);
+}
+
+div.dt-container .dt-input,
+div.dt-container .dt-search input,
+div.dt-container .dt-paging .dt-paging-button {
+    border-radius: var(--ctl-radius);
+}
+
+div.dt-container .dt-search input {
+    padding-inline: var(--ctl-field-pad-x-sm);
+}
+
+@keyframes ctl-menu-in-from-top {
+    from { opacity: 0; translate: 0 calc(var(--ctl-menu-shift) * -1); }
+    to   { opacity: 1; translate: 0 0; }
+}
+
+@keyframes ctl-menu-in-from-bottom {
+    from { opacity: 0; translate: 0 var(--ctl-menu-shift); }
+    to   { opacity: 1; translate: 0 0; }
+}
+
+@keyframes ctl-menu-in-from-left {
+    from { opacity: 0; translate: calc(var(--ctl-menu-shift) * -1) 0; }
+    to   { opacity: 1; translate: 0 0; }
+}
+
+@keyframes ctl-menu-in-from-right {
+    from { opacity: 0; translate: var(--ctl-menu-shift) 0; }
+    to   { opacity: 1; translate: 0 0; }
+}
+
+.dropdown-menu.show,
+.select2-container--open .select2-dropdown {
+    animation: ctl-menu-in-from-top var(--ctl-menu-motion) both;
+}
+
+.dropdown-menu.show[data-popper-placement^="top"],
+.select2-container--open .select2-dropdown--above {
+    animation-name: ctl-menu-in-from-bottom;
+}
+
+.dropdown-menu.show[data-popper-placement^="right"] {
+    animation-name: ctl-menu-in-from-left;
+}
+
+.dropdown-menu.show[data-popper-placement^="left"] {
+    animation-name: ctl-menu-in-from-right;
+}
+
+.dropdown-item,
+.select2-container .select2-results__option {
+    transition: background-color var(--ctl-motion-fast),
+                color var(--ctl-motion-fast);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .dropdown-menu.show,
+    .select2-container--open .select2-dropdown {
+        animation: none;
+    }
+}
+
+.select2-container .select2-selection--single:focus,
+.select2-container .select2-selection--single:focus-visible,
+.select2-container .select2-selection--multiple:focus,
+.select2-container .select2-selection--multiple:focus-visible {
+    outline: none;
+}
+
+.form-control:focus,
+div.dt-container .dt-input:focus,
+div.dt-container .dt-search input:focus {
+    border-color: var(--ctl-accent);
+    box-shadow: 0 0 0 var(--ctl-ring-w) var(--ctl-ring);
+}
+
+.form-select:focus-visible,
+.select2-container .select2-selection--single:focus-visible,
+.select2-container .select2-selection--multiple:focus-visible {
+    box-shadow: 0 0 0 var(--ctl-ring-w) var(--ctl-ring);
+}
+
+.btn:focus-visible,
+.btn-close:focus-visible,
+.form-control:focus-visible,
+div.dt-container .dt-input:focus-visible,
+div.dt-container .dt-search input:focus-visible {
+    outline: var(--ctl-outline-w) solid var(--ctl-outline);
+    outline-offset: var(--ctl-outline-offset);
+    box-shadow: 0 0 0 calc(var(--ctl-outline-offset) + var(--ctl-outline-w)) var(--ctl-outline-halo);
+}
+
+textarea.form-control:focus-visible,
+.sk-otp__input:focus-visible,
+.code-input:focus-visible {
+    border-radius: var(--ctl-radius-soft);
+}

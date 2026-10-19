@@ -29,3 +29,21 @@ button.login-inline-link{border:0;background:none;padding:0}
 /* Center the SVG itself, without the anonymous text baseline of its wrapper. */
 .stellar-icon{display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;line-height:1;flex-shrink:0}
 .stellar-icon>.svg-inline--fa{display:block;vertical-align:initial}
+
+/* Historical context field height, independent of the old SK DOM identifiers. */
+.workspace-form textarea[name=context]{min-height:40vh}
+.workspace-form{max-height:calc(100dvh - 56px);overflow-y:auto}
+.workspace-user-picker{position:relative;height:auto;min-height:var(--ctl-field-h);padding-block:.25rem}
+.workspace-user-chips{display:flex;flex-wrap:wrap;gap:var(--s-1)}
+.workspace-user-chip{display:inline-flex;align-items:center;padding:.0625rem var(--s-2);font-size:var(--fs-100);line-height:1.5;background:var(--surface-2);border:1px solid var(--border-default);border-radius:var(--ctl-radius)}
+.workspace-user-chip button{border:0;background:none;color:var(--text-secondary);margin-right:var(--s-1);padding:0}
+.workspace-user-chip button:hover{color:var(--danger-text)}
+.workspace-user-search{display:block;width:100%;border:0;background:transparent;color:var(--text-primary);font:inherit;padding:2px 0;outline:none}
+.workspace-user-results{margin-top:var(--ctl-menu-gap);max-height:200px;overflow-y:auto;background:var(--surface-0);border:1px solid var(--border-default);border-radius:var(--ctl-menu-radius);box-shadow:var(--ctl-menu-shadow)}
+.workspace-user-option,.workspace-user-empty{padding:var(--s-2) var(--s-3)}
+.workspace-user-option{cursor:pointer}
+.workspace-user-option:hover,.workspace-user-option[aria-selected=true]{background:var(--brand-050);color:var(--text-link)}
+.workspace-user-picker:focus-within{border-color:var(--brand-500)}
+
+.workspace-user-control{position:relative}
+.workspace-user-results{position:absolute;top:100%;left:0;right:0;z-index:2}

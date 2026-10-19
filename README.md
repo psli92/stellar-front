@@ -1,4 +1,4 @@
-# Stellar Front — 0.0.9
+# Stellar Front — 0.0.10
 
 Socle statique HTML/CSS/JavaScript, servi par Nginx. La connexion par mot de passe est disponible ; le dashboard et la lecture des portfolios sont disponibles. Ce dépôt ne contient ni PHP, ni Symfony, ni Redis, ni compte technique.
 
@@ -143,3 +143,10 @@ les erreurs d’enregistrement, le client courant, les logos et les libellés av
 Rétablissement des règles historiques des paragraphes : taille 1.1em, graisse 300 et interligne 1.7em.
 Les styles propres aux composants restent prioritaires. La police Inter Light du ZIP est embarquée
 pour afficher réellement la graisse 300, sans dépendance externe.
+
+## Modales — 0.0.10
+
+Les formulaires reprennent les sous-titres et pieds de formulaire traduits du ZIP (labelFO),
+ainsi que la hauteur minimale de 40vh des champs Contexte. Le sélecteur des chefs de projet
+affiche des pastilles supprimables et recherche par nom ou e-mail, avec navigation clavier.
+Les droits et les corps des appels API restent inchangés.

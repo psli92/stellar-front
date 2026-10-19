@@ -1,0 +1,103 @@
+.sk-table-wrap {
+    overflow-x: auto;
+    background: var(--surface-0);
+    border: 0;
+    border-radius: var(--surface-radius);
+    box-shadow: var(--shadow-1);
+}
+
+.sk-table {
+    width: 100%;
+    margin: 0;
+    font-size: var(--fs-200);
+    border-collapse: collapse;
+}
+
+.sk-table caption {
+    padding: var(--s-3) var(--s-4);
+    font-size: var(--fs-100);
+    text-align: left;
+    color: var(--text-secondary);
+    caption-side: top;
+}
+
+.sk-table th,
+.sk-table td {
+    padding: var(--s-3) var(--s-4);
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.sk-table thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-size: var(--fs-50);
+    font-weight: var(--fw-semibold);
+    letter-spacing: var(--track-caps);
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: var(--text-tertiary);
+    background: var(--surface-0);
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.sk-table tbody th {
+    font-weight: var(--fw-medium);
+}
+
+.sk-table tbody tr:last-child td,
+.sk-table tbody tr:last-child th {
+    border-bottom: 0;
+}
+
+.sk-table tbody tr:hover {
+    background: var(--surface-1);
+}
+
+.sk-table tbody tr[data-role="contribution-row"] {
+    cursor: pointer;
+}
+
+.sk-table tbody tr.is-selected {
+    background: var(--brand-050);
+    box-shadow: inset 2px 0 0 var(--brand-500);
+}
+
+.sk-table__truncate {
+    display: inline-block;
+    max-width: 24rem;
+    overflow: hidden;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.sk-table tbody th:has(> .sk-table__truncate) {
+    white-space: nowrap;
+}
+
+.sk-table tbody th > .sk-badge {
+    vertical-align: middle;
+}
+
+.sk-table__actions {
+    width: 1%;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.sk-table__actions .btn {
+    opacity: 0;
+    transition: opacity var(--motion-fast) var(--ease);
+}
+
+.sk-table tbody tr:hover .sk-table__actions .btn,
+.sk-table__actions .btn:focus-visible {
+    opacity: 1;
+}
+
+@media (hover: none) {
+    .sk-table__actions .btn { opacity: 1; }
+}

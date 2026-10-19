@@ -1,0 +1,44 @@
+.tag-option {
+    cursor: pointer;
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+.tag-option:hover {
+    background-color: var(--bs-tertiary-bg);
+}
+
+.tag-option .form-check-input {
+    cursor: pointer;
+    margin: 0;
+}
+
+.tag-option .form-check-label {
+    cursor: pointer;
+    flex: 1;
+}
+#tags-dropdown .dropdown-menu {
+    max-height: 300px;
+    overflow-y: auto;
+    min-width: 250px;
+}
+
+#tags-dropdown .tag-option {
+    cursor: pointer;
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+#tags-dropdown .tag-option:hover {
+    background-color: var(--bs-tertiary-bg);
+}
+
+#tags-dropdown .tag-option .form-check-input {
+    cursor: pointer;
+    margin: 0;
+}
+
+#tags-dropdown .tag-option .form-check-label {
+    cursor: pointer;
+    flex: 1;
+}

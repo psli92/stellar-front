@@ -24,6 +24,7 @@ try{const preferred=storage?.getItem('stellar:language');if(/^[A-Z]{2,3}$/.test(
 function showError(message) { error.textContent = message; error.hidden = !message; }
 function closeSession() {
   clearInterval(expiryTimer); clearSession(storage); active = null;
+  document.title=(publicLabels.AppTitle||'Stellar - Cockpit AI')+' - '+(publicLabels.LoginPageTitle||'Connexion');
   dashboardView.hide(); byId('login-layout').hidden=false; byId('connected').hidden = true; byId('login-section').hidden = false;history.replaceState(null,'','/');
   byId('password').value = ''; byId('username').focus();
 }
@@ -48,7 +49,7 @@ async function start(force = false) {
     if (run !== generation) return;
     publicLabels = data.labels; availableLanguages = data.languages;
     document.documentElement.lang = data.language.toLowerCase();
-    document.title = data.labels.LoginPageTitle || 'Connexion · Stellar';
+    document.title = (data.labels.AppTitle || 'Stellar - Cockpit AI')+' - '+(data.labels.LoginPageTitle || 'Connexion');
     document.querySelectorAll('[data-label]').forEach(node => {
       const value = data.labels[node.dataset.label]; if (value) node.textContent = value;
     });

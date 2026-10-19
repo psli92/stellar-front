@@ -1,4 +1,4 @@
-# Stellar Front — 0.0.12
+# Stellar Front — 0.0.13
 
 Socle statique HTML/CSS/JavaScript, servi par Nginx. La connexion par mot de passe est disponible ; le dashboard et la lecture des portfolios sont disponibles. Ce dépôt ne contient ni PHP, ni Symfony, ni Redis, ni compte technique.
 
@@ -125,7 +125,7 @@ Aucun compte de service ni jeton dans une URL d’image.
 
 Liste et lecture des projets et activités, création de portefeuilles/projets, modification du contexte
 d’un portefeuille et d’un projet. Les activités se créent avec les quatre étapes du formulaire historique
-et se modifient depuis leur détail. Les contributions et traitements IA restent à l’étape suivante.
+et se modifient depuis leur détail. Les contributions et traitements IA sont disponibles depuis la version 0.0.13.
 Les actions utilisent les AutoForms et les droits de l’API existante ; les corps envoyés respectent ses schémas stricts.
 Aucun nouvel import SK n’est nécessaire si les migrations Stellar existantes sont déjà installées.
 
@@ -150,3 +150,35 @@ Les formulaires reprennent les sous-titres et pieds de formulaire traduits du ZI
 ainsi que la hauteur minimale de 40vh des champs Contexte. Le sélecteur des chefs de projet
 affiche des pastilles supprimables et recherche par nom ou e-mail, avec navigation clavier.
 Les droits et les corps des appels API restent inchangés.
+
+## Contributions et traitements IA des activités — 0.0.13
+
+Depuis une activité : choix du groupe, compteurs par axe, historique et accès à l’analyse.
+Chaque axe propose les contributions du groupe courant, les filtres, la sélection, les favoris
+et la synthèse de la sélection. La capture accepte du texte formaté, un fichier audio/vidéo
+ou un enregistrement au microphone. Le lecteur conserve l’original et permet de modifier la copie.
+Les styles, icônes et clés labelFO proviennent du ZIP historique. L’éditeur léger propose
+les commandes de mise en forme utilisées par ce parcours sans dépendance au serveur Symfony.
+
+Le parcours narratif conserve la sélection par onglet et identité de session, charge les choix
+format/longueur/intention depuis SK, crée la demande puis lance le narratif. L’analyse transverse
+est déclenchée lorsque le narratif est terminé. Les deux résultats s’affichent avec copie du texte,
+blocs d’analyse repliables, historique et suivi toutes les deux secondes. Le rechargement reprend
+la demande identifiée dans l’URL ; un échec exige une relance explicite. Le suivi s’arrête au départ
+de la page, à la déconnexion, à l’état final ou après cinq erreurs consécutives.
+
+Les fichiers passent par `/api/{language}/assets`, puis par la transcription Stellar, avec le JWT
+utilisateur. Aucun compte de service n’est exposé. Les requêtes longues ont un délai adapté ; elles
+ne sont pas rejouées automatiquement. Les messages métier/IA sont affichés comme du texte.
+Le HTML des contributions et résultats est reconstruit à partir de balises de mise en forme autorisées.
+Les scripts, médias intégrés et attributs d’événements sont retirés.
+
+Aucun changement SK/Stellar et aucun nouvel import. Les migrations métier 005, processing 006
+et les réglages/droits existants doivent être installés. Le worker Stellar doit fonctionner pour
+le narratif et l’analyse. Le microphone nécessite HTTPS (ou localhost) ; l’import reste disponible
+sur le LAN HTTP. Les fichiers sont limités à 50 Mo côté navigateur, sous la limite du proxy.
+
+Validation locale : `node --test tests/*.test.mjs`, `node tests/activity-browser.mjs`,
+`node tests/workspace-browser.mjs`, `node tests/login-browser.mjs` avec Playwright/Edge.
+Le test activité emploie une API, des fichiers et un microphone simulés ; il ne consomme pas
+le MaaS et n’écrit aucune donnée sur les environnements déployés. Le proxy Docker est testé en CI.

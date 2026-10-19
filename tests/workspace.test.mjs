@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {workspacePath,loadWorkspace} from '../public/assets/workspace-pages.mjs';
+import {workspacePath,loadWorkspace,workspaceBrowserTitle} from '../public/assets/workspace-pages.mjs';
 import {formPayload,allowedForm} from '../public/assets/workspace-forms.mjs';
 import {clearWorkspaceLabels} from '../public/assets/workspace-labels.mjs';
 test('workspace paths and membership guard prevent cross-client project/activity reads',async()=>{
@@ -21,4 +21,13 @@ test('denied forms are not capabilities; authorization failures propagate',async
  assert.equal(await allowedForm({token:'x'},'FR','PortfolioCreate',denied(403)),null);
  await assert.rejects(allowedForm({token:'x'},'FR','PortfolioCreate',denied(401)),e=>e.status===401);
  clearWorkspaceLabels();
+});
+
+test('browser title blocks follow the original Twig templates and translated activity type',()=>{
+ const labels={'ActivityType.TransformationNarrative.title':'Narratif de transformation',portfolioDetailTitle:'Détail du portefeuille',NarrativeResultTitle:'Résultat',axe_page_title:'Contributions'};
+ const page={kind:'activities',data:{name:'Atelier 1',type:{name:'TransformationNarrative'}}};
+ assert.equal(workspaceBrowserTitle(page,labels),'Atelier 1 - Narratif de transformation');
+ assert.equal(workspaceBrowserTitle({...page,special:true,mode:'result'},labels),'Atelier 1 - Résultat');
+ assert.equal(workspaceBrowserTitle({...page,special:true,mode:'axis'},labels),'Contributions');
+ assert.equal(workspaceBrowserTitle({kind:'portfolios',data:{name:'Stellar'}},labels),'Stellar - Détail du portefeuille');
 });

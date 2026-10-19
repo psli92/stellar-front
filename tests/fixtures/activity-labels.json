@@ -1,0 +1,954 @@
+{
+  "ActivityInformationsTitle": [
+    "Informations",
+    0
+  ],
+  "ActivityType.AmbitionLevel.description": [
+    "L'agent qui fixe le cap et le rythme. Il formule les résultats attendus, la cible idéale et les étapes intermédiaires avec leurs jalons.",
+    0
+  ],
+  "ActivityType.AmbitionLevel.title": [
+    "Niveau d'ambition",
+    0
+  ],
+  "ActivityType.ImpactAnalysis.description": [
+    "L'agent qui cartographie ce que votre transformation change vraiment. Il identifie les populations concernées, les impacts métiers et les leviers d'adoption, pour agir là où cela compte.",
+    0
+  ],
+  "ActivityType.ImpactAnalysis.title": [
+    "Analyse d'impacts",
+    0
+  ],
+  "ActivityType.PerceptionDiagnostic.description": [
+    "L'agent qui prend le pouls de votre organisation. Il analyse en continu les ressentis, les irritants et les signaux fiables, pour que vous écoutiez vraiment le terrain.",
+    0
+  ],
+  "ActivityType.PerceptionDiagnostic.title": [
+    "Diagnostic de perception",
+    0
+  ],
+  "ActivityType.TransformationNarrative.description": [
+    "Captez la parole d'un groupe, structurez-la par axes (Pourquoi / Quoi / Comment) et produisez un narratif de transformation fluide et engageant.",
+    0
+  ],
+  "ActivityType.TransformationNarrative.title": [
+    "Narratif de transformation",
+    0
+  ],
+  "ActivityTypeSeeMethod": [
+    "Voir la fiche méthode",
+    0
+  ],
+  "ActivityTypeTitle": [
+    "Type d'activité",
+    0
+  ],
+  "AllTagsLabel": [
+    "Tous les tags",
+    0
+  ],
+  "AnalyseAxisHow": [
+    "Comment",
+    0
+  ],
+  "AnalyseAxisWhat": [
+    "Quoi",
+    0
+  ],
+  "AnalyseAxisWhy": [
+    "Pourquoi",
+    0
+  ],
+  "AnalyseCheckAll": [
+    "Tout cocher",
+    0
+  ],
+  "AnalyseCheckNone": [
+    "Tout décocher",
+    0
+  ],
+  "AnalyseEmptyAll": [
+    "Aucune source disponible pour le moment.",
+    0
+  ],
+  "AnalyseEmptyFilter": [
+    "Aucune contribution n'est disponible pour le moment.",
+    0
+  ],
+  "AnalyseFilterAllAxes": [
+    "Tous les axes",
+    0
+  ],
+  "AnalyseFilterFavorites": [
+    "Favoris",
+    0
+  ],
+  "AnalyseFilterHowAxis": [
+    "Axe Comment",
+    0
+  ],
+  "AnalyseFilterValidatedOnly": [
+    "Validés uniquement",
+    0
+  ],
+  "AnalyseFilterWhatAxis": [
+    "Axe Quoi",
+    0
+  ],
+  "AnalyseFilterWhyAxis": [
+    "Axe Pourquoi",
+    0
+  ],
+  "AnalyseGoToParameters": [
+    "Paramétrer le narratif",
+    0
+  ],
+  "AnalyseListAxisColumn": [
+    "Axe",
+    0
+  ],
+  "AnalyseListContributionColumn": [
+    "Contribution",
+    0
+  ],
+  "AnalyseListDateColumn": [
+    "Date",
+    0
+  ],
+  "AnalyseListGroupColumn": [
+    "Groupe",
+    0
+  ],
+  "AnalyseListStatusColumn": [
+    "Statut",
+    0
+  ],
+  "AnalyseListTypeColumn": [
+    "Type",
+    0
+  ],
+  "AnalyseListVersionColumn": [
+    "Version",
+    0
+  ],
+  "AnalyseNbSelected": [
+    "étiquette(s) sélectionnée(s)",
+    0
+  ],
+  "AnalyseNoContributionAccess": [
+    "Cette activité ne contient aucune contribution : l'écran de synthèse n'est pas accessible.",
+    0
+  ],
+  "AnalysePageSubtitle": [
+    "Sélectionnez les contributions à inclure dans le narratif.",
+    0
+  ],
+  "AnalysePageTitle": [
+    "Analyse des contributions",
+    0
+  ],
+  "AnalysePreview": [
+    "Voir l’aperçu",
+    0
+  ],
+  "AnalysePreviewClose": [
+    "Fermer",
+    0
+  ],
+  "AnalysePreviewEmpty": [
+    "Cette contribution ne contient aucun texte.",
+    0
+  ],
+  "AnalysePreviewTooltip": [
+    "Voir un aperçu",
+    0
+  ],
+  "AnalyseSelectContribution": [
+    "Sélectionner",
+    0
+  ],
+  "AnalyseSelectedCount": [
+    "contribution(s) sélectionnée(s)",
+    0
+  ],
+  "AnalyseStatusDraft": [
+    "Brouillon",
+    0
+  ],
+  "AnalyseStatusValidated": [
+    "Validée",
+    0
+  ],
+  "AnalyseTypeSynthesis": [
+    "Synthèse",
+    0
+  ],
+  "AnalyseTypeTranscript": [
+    "Transcript",
+    0
+  ],
+  "AnalyseVisibleCount": [
+    "contribution(s) affichée(s)",
+    0
+  ],
+  "Axis.How.description": [
+    "La voie de la transformation : comment passer de l'état actuel à l'état souhaité.",
+    0
+  ],
+  "Axis.How.title": [
+    "Comment",
+    0
+  ],
+  "Axis.What.description": [
+    "La vision de la transformation : description de l'état souhaité.",
+    0
+  ],
+  "Axis.What.title": [
+    "Quoi",
+    0
+  ],
+  "Axis.Why.description": [
+    "La nécessité de la transformation : raisons profondes et urgence du changement.",
+    0
+  ],
+  "Axis.Why.title": [
+    "Pourquoi",
+    0
+  ],
+  "ComingSoon": [
+    "Bientôt disponible",
+    0
+  ],
+  "ContribFavoriteToggle": [
+    "Marquer comme favori",
+    0
+  ],
+  "ContribNoTitleError": [
+    "Le titre ne peut etre vide",
+    0
+  ],
+  "ContribSelectCheckbox": [
+    "Sélectionner cette contribution",
+    0
+  ],
+  "ContribUploadNoFile": [
+    "Aucun fichier reçu par le serveur",
+    0
+  ],
+  "ContribUploadSuccess": [
+    "Enregistrement audio réussi",
+    0
+  ],
+  "ContribViewerCancel": [
+    "Annuler",
+    0
+  ],
+  "ContribViewerClose": [
+    "Fermer",
+    0
+  ],
+  "ContribViewerEdit": [
+    "Éditer",
+    0
+  ],
+  "ContribViewerNetworkError": [
+    "Erreur réseau, merci de réessayer.",
+    0
+  ],
+  "ContribViewerOpen": [
+    "Ouvrir dans l’espace central",
+    0
+  ],
+  "ContribViewerSave": [
+    "Enregistrer",
+    0
+  ],
+  "ContribViewerSaveError": [
+    "L’enregistrement a échoué, merci de réessayer.",
+    0
+  ],
+  "ContribViewerSaveSuccess": [
+    "Modifications enregistrées avec succès.",
+    0
+  ],
+  "ContribViewerTitle": [
+    "Contribution",
+    0
+  ],
+  "ContribViewerVersionEdited": [
+    "Version Corrigée",
+    0
+  ],
+  "ContribViewerVersionOriginal": [
+    "Version Originale",
+    0
+  ],
+  "Contribution": [
+    "Contribution",
+    0
+  ],
+  "ContributionCopySuccess": [
+    "Copié",
+    0
+  ],
+  "ContributionImportInvalidFormat": [
+    "Format non supporté : seuls les fichiers MP3 sont acceptés",
+    0
+  ],
+  "ContributionImportTranscribing": [
+    "Transcription en cours…",
+    0
+  ],
+  "ContributionImportUploading": [
+    "Envoi du fichier en cours…",
+    0
+  ],
+  "ContributionProdSelectedPlural": [
+    " productions sélectionnées",
+    0
+  ],
+  "ContributionProdSelectedSingular": [
+    " production sélectionnée",
+    0
+  ],
+  "ContributionRecordCaptured": [
+    "Audio capturé (",
+    0
+  ],
+  "ContributionRecordInProgress": [
+    "Enregistrement en cours…",
+    0
+  ],
+  "ContributionRecordReady": [
+    ") prêt à transcrire",
+    0
+  ],
+  "ContributionRecordUploading": [
+    "Sauvegarde en cours",
+    0
+  ],
+  "HistoryBackToActivity": [
+    "Retour à l'activité",
+    0
+  ],
+  "HistoryBreadcrumb": [
+    "Historique",
+    0
+  ],
+  "HistoryButtonLabel": [
+    "Historique des synthèses",
+    0
+  ],
+  "HistoryColAuthor": [
+    "Auteur",
+    0
+  ],
+  "HistoryColDate": [
+    "Date",
+    0
+  ],
+  "HistoryColGeneration": [
+    "Génération",
+    0
+  ],
+  "HistoryColProgress": [
+    "Avancement",
+    0
+  ],
+  "HistoryColTitle": [
+    "Nom du livrable",
+    0
+  ],
+  "HistoryEmpty": [
+    "Aucune synthèse n’a encore été générée pour cette activité.",
+    0
+  ],
+  "HistoryNewGeneration": [
+    "Nouvelle génération",
+    0
+  ],
+  "HistoryOpen": [
+    "Ouvrir / Comparer",
+    0
+  ],
+  "HistoryPageTitle": [
+    "Historique des synthèses",
+    0
+  ],
+  "HistoryPollingError": [
+    "Impossible de vérifier l’avancement des générations.",
+    0
+  ],
+  "HistorySectionTitle": [
+    "Générations lancées",
+    0
+  ],
+  "HistoryUntitled": [
+    "Synthèse sans titre",
+    0
+  ],
+  "HistoryWidgetTitle": [
+    "Dernières synthèses",
+    0
+  ],
+  "HistoryWidgetViewAll": [
+    "Voir toutes les synthèses",
+    0
+  ],
+  "MicrophoneAccessRefused": [
+    "Accès micro refusé",
+    0
+  ],
+  "NarrativeClipboardCopied": [
+    "Copié dans le presse-papiers",
+    0
+  ],
+  "NarrativeClipboardCopyFailed": [
+    "La copie a échoué",
+    0
+  ],
+  "NarrativeContextHelp": [
+    "Ces consignes guideront le moteur d'IA lors de la génération de la synthèse.",
+    0
+  ],
+  "NarrativeContextLabel": [
+    "Contexte / Consignes particulières pour l'IA (optionnel)",
+    0
+  ],
+  "NarrativeContextPlaceholder": [
+    "Ex: Insister sur la conduite du changement, adopter un ton synthétique orienté Codir, prendre en compte le contexte de restructuration...",
+    0
+  ],
+  "NarrativeContributionPreview": [
+    "Aperçu de la contribution",
+    0
+  ],
+  "NarrativeErrorOccurred": [
+    "Une erreur est survenue.",
+    0
+  ],
+  "NarrativeGenerateButton": [
+    "Générer",
+    0
+  ],
+  "NarrativeGenerationFailed": [
+    "La génération a échoué. Veuillez réessayer.",
+    0
+  ],
+  "NarrativeParametersSection": [
+    "Paramètres",
+    0
+  ],
+  "NarrativeParametersSubtitle": [
+    "Configurez la génération de l’analyse et du narratif.",
+    0
+  ],
+  "NarrativeParametersTitle": [
+    "Paramètres du narratif",
+    0
+  ],
+  "NarrativeRequestAccepted": [
+    "Demande prise en compte",
+    0
+  ],
+  "NarrativeResultAnalyseLabel": [
+    "Analyse",
+    0
+  ],
+  "NarrativeResultBackToTop": [
+    "Retour en haut",
+    0
+  ],
+  "NarrativeResultCopy": [
+    "Copier",
+    0
+  ],
+  "NarrativeResultCopyAll": [
+    "Tout copier",
+    0
+  ],
+  "NarrativeResultDisplayControls": [
+    "Affichage",
+    0
+  ],
+  "NarrativeResultEmptyHint": [
+    "Cochez un document pour l’afficher.",
+    0
+  ],
+  "NarrativeResultGenerating": [
+    "Génération en cours",
+    0
+  ],
+  "NarrativeResultNarratifLabel": [
+    "Narratif",
+    0
+  ],
+  "NarrativeResultPollingError": [
+    "Impossible de vérifier l’état de la génération.",
+    0
+  ],
+  "NarrativeResultRefreshPage": [
+    "Rafraîchir la page",
+    0
+  ],
+  "NarrativeResultRegenerate": [
+    "Régénérer",
+    0
+  ],
+  "NarrativeResultStatusPending": [
+    "En cours",
+    0
+  ],
+  "NarrativeResultStatusReady": [
+    "Disponible",
+    0
+  ],
+  "NarrativeResultSubtitle": [
+    "Analyse transverse et narratif de transformation",
+    0
+  ],
+  "NarrativeResultTitle": [
+    "Narratif final",
+    0
+  ],
+  "NarrativeTitleLabel": [
+    "Nom du livrable",
+    0
+  ],
+  "NarrativeTitlePlaceholder": [
+    "ex : Synthèse Copil du 20/08/2026",
+    0
+  ],
+  "NarrativeToastClose": [
+    "Fermer",
+    0
+  ],
+  "NewActivitySubTitle": [
+    "Choisissez le type d'activité et renseignez les informations de base",
+    0
+  ],
+  "NewActivityTitle": [
+    "Nouvelle activité",
+    0
+  ],
+  "Next": [
+    "Suivant",
+    0
+  ],
+  "Previous": [
+    "Précédent",
+    0
+  ],
+  "RecordingError": [
+    "Erreur enregistrement audio",
+    0
+  ],
+  "Save": [
+    "Enregistrer",
+    0
+  ],
+  "SynthesisSelectPlaceholder": [
+    "Sélectionnez une valeur",
+    0
+  ],
+  "TagButtonChooseTag": [
+    "Choisissez votre groupe de travail",
+    0
+  ],
+  "TagSelectAssignError": [
+    "L'affectation a échoué, merci de réessayer.",
+    0
+  ],
+  "TagSelectModalAriaLabel": [
+    "Étiquettes de groupe disponibles",
+    0
+  ],
+  "TagSelectModalDesc1": [
+    "Sélectionnez l'étiquette correspondant à votre sous-atelier.",
+    0
+  ],
+  "TagSelectModalDesc2": [
+    "Ce choix rattachera toutes vos contributions de la session.",
+    0
+  ],
+  "TagSelectModalSubmitBtn": [
+    "Enregistrer",
+    0
+  ],
+  "TagSelectModalTitle": [
+    "Choisissez votre groupe de travail",
+    0
+  ],
+  "TagSelectNetworkError": [
+    "Erreur réseau, merci de réessayer.",
+    0
+  ],
+  "TextTooLongError": [
+    "Le texte est trop long",
+    0
+  ],
+  "TransverseAccordionToggle": [
+    "Déplier ou replier la section",
+    0
+  ],
+  "TransverseBloc1Title": [
+    "Points forts et points d'amélioration du narratif",
+    0
+  ],
+  "TransverseBloc2Title": [
+    "Consensus, dissensus et ambiguïtés",
+    0
+  ],
+  "TransverseBloc3Title": [
+    "Éléments saillants et points de vigilance",
+    0
+  ],
+  "TransverseEmptySection": [
+    "Aucun contenu disponible pour cette section.",
+    0
+  ],
+  "TransverseLabelAmbiguites": [
+    "Ambiguïtés",
+    0
+  ],
+  "TransverseLabelConsensus": [
+    "Consensus",
+    0
+  ],
+  "TransverseLabelDissensus": [
+    "Dissensus",
+    0
+  ],
+  "TransverseLabelElementsSaillants": [
+    "Éléments saillants",
+    0
+  ],
+  "TransverseLabelPointsAmelioration": [
+    "Points d'amélioration",
+    0
+  ],
+  "TransverseLabelPointsForts": [
+    "Points forts",
+    0
+  ],
+  "TransverseLabelPointsVigilance": [
+    "Points de vigilance",
+    0
+  ],
+  "TransverseLabelSyntheseBloc1": [
+    "Synthèse du regard miroir",
+    0
+  ],
+  "TransverseLabelSyntheseBloc2": [
+    "Synthèse des convergences et divergences",
+    0
+  ],
+  "TransverseLabelSyntheseBloc3": [
+    "Synthèse de la trajectoire et de la vigilance",
+    0
+  ],
+  "TransverseStep_1_1_PointsForts": [
+    "Points forts",
+    0
+  ],
+  "TransverseStep_1_2_PointsAmelioration": [
+    "Points d'amélioration",
+    0
+  ],
+  "TransverseStep_1_3_Synthese": [
+    "Synthèse du regard miroir",
+    0
+  ],
+  "TransverseStep_2_1_Consensus": [
+    "Consensus",
+    0
+  ],
+  "TransverseStep_2_2_Dissensus": [
+    "Dissensus",
+    0
+  ],
+  "TransverseStep_2_3_Ambiguites": [
+    "Ambiguïtés",
+    0
+  ],
+  "TransverseStep_2_4_Synthese": [
+    "Synthèse des convergences et divergences",
+    0
+  ],
+  "TransverseStep_3_1_ElementsSaillants": [
+    "Éléments saillants",
+    0
+  ],
+  "TransverseStep_3_2_PointsVigilance": [
+    "Points de vigilance",
+    0
+  ],
+  "TransverseStep_3_3_Synthese": [
+    "Synthèse de la trajectoire et de la vigilance",
+    0
+  ],
+  "TransverseSummaryEyebrow": [
+    "Synthèse du bloc",
+    0
+  ],
+  "actionCancel": [
+    "Annuler",
+    0
+  ],
+  "actionSave": [
+    "Enregistrer",
+    0
+  ],
+  "analyseAndSynthetize": [
+    "Analyser et synthétiser",
+    0
+  ],
+  "axe_btn_back_activity": [
+    "Retour à l'activité",
+    0
+  ],
+  "axe_btn_copy": [
+    "Copier",
+    0
+  ],
+  "axe_btn_generate_v2": [
+    "Générer V2",
+    0
+  ],
+  "axe_btn_preview": [
+    "Prévisualiser",
+    0
+  ],
+  "axe_btn_validate_version": [
+    "Valider version",
+    0
+  ],
+  "axe_context_desc": [
+    "Capture audio, transcription et synthèse des échanges du groupe pour cet axe de travail.",
+    0
+  ],
+  "axe_context_label": [
+    "Axe actif",
+    0
+  ],
+  "axe_context_title": [
+    "Réunion de cadrage",
+    0
+  ],
+  "axe_contribution_new": [
+    "Nouvelle contribution",
+    0
+  ],
+  "axe_contribution_title": [
+    "Titre de la contribution",
+    0
+  ],
+  "axe_contribution_title_help": [
+    "Le titre de la contribution doit être unique et descriptif.",
+    0
+  ],
+  "axe_contribution_title_placeholder": [
+    "Entrez un titre pour cette nouvelle contribution",
+    0
+  ],
+  "axe_dz_main": [
+    "Glissez-déposez un fichier MP3 ici",
+    0
+  ],
+  "axe_dz_sub": [
+    "ou cliquez pour parcourir (MP3, WAV, M4A)",
+    0
+  ],
+  "axe_empty_favorites": [
+    "Aucun favori pour cette étiquette.",
+    0
+  ],
+  "axe_empty_state_subtext": [
+    "Le transcript brut reste consultable en cliquant la contribution dans le panneau de gauche.",
+    0
+  ],
+  "axe_empty_state_text": [
+    "Sélectionnez des contributions, puis cliquez sur « Générer une synthèse ».",
+    0
+  ],
+  "axe_filter_all": [
+    "Tout",
+    0
+  ],
+  "axe_filter_favorites": [
+    "Favoris",
+    0
+  ],
+  "axe_filter_syntheses": [
+    "Synthèses",
+    0
+  ],
+  "axe_filter_transcripts": [
+    "Transcripts",
+    0
+  ],
+  "axe_filter_validated": [
+    "Validé",
+    0
+  ],
+  "axe_hint_record": [
+    "Appuyez pour démarrer l'enregistrement",
+    0
+  ],
+  "axe_hint_selected_count": [
+    "2 contributions sélectionnées",
+    0
+  ],
+  "axe_modal_p1": [
+    "Bon, on démarre le point de cadrage. L'objectif aujourd'hui c'est de clarifier le périmètre du premier lot.",
+    0
+  ],
+  "axe_modal_p2": [
+    "Côté intégration on est prêts à figer la maquette, il manque juste la validation de l'ergonomie de la sidebar.",
+    0
+  ],
+  "axe_modal_p3": [
+    "D'accord, et pour la capture audio on garde les trois modes : enregistrement, import et collage de texte.",
+    0
+  ],
+  "axe_modal_p4": [
+    "Parfait. On valide le design system avant d'attaquer la logique métier.",
+    0
+  ],
+  "axe_modal_title_transcript": [
+    "Transcript brut",
+    0
+  ],
+  "axe_page_title": [
+    "Espace de travail",
+    0
+  ],
+  "axe_panel_capture_title": [
+    "Capture",
+    0
+  ],
+  "axe_panel_synthesis_title": [
+    "Synthèse IA",
+    0
+  ],
+  "axe_paste_placeholder": [
+    "Collez ici un texte à transcrire ou à synthétiser…",
+    0
+  ],
+  "axe_preview_transcript_title": [
+    "Prévisualiser le transcript brut",
+    0
+  ],
+  "axe_prod_name_import": [
+    "Import audio · point hebdo",
+    0
+  ],
+  "axe_prod_name_rec_g1": [
+    "Enregistrement · Groupe 1",
+    0
+  ],
+  "axe_prod_name_synth_draft": [
+    "Synthèse IA · brouillon",
+    0
+  ],
+  "axe_prod_name_synth_final": [
+    "Synthèse IA · finale",
+    0
+  ],
+  "axe_sidebar_title": [
+    "Contributions du groupe",
+    0
+  ],
+  "axe_synth_h_decisions": [
+    "Décisions",
+    0
+  ],
+  "axe_synth_h_etapes": [
+    "Prochaines étapes",
+    0
+  ],
+  "axe_synth_h_objet": [
+    "Objet de la réunion",
+    0
+  ],
+  "axe_synth_li_capture": [
+    "Le module de capture utilise des onglets : enregistrement, import audio et collage de texte.",
+    0
+  ],
+  "axe_synth_li_logique": [
+    "Brancher la logique métier (capture, transcription, synthèse) dans un second temps.",
+    0
+  ],
+  "axe_synth_li_maquette": [
+    "Intégrer la maquette et faire valider l'ergonomie générale.",
+    0
+  ],
+  "axe_synth_li_sidebar": [
+    "La sidebar des contributions reste positionnée à gauche, en largeur fixe.",
+    0
+  ],
+  "axe_synth_li_transcript": [
+    "Le transcript brut est consultable en modale ; la synthèse reste en lecture seule.",
+    0
+  ],
+  "axe_synth_p_cadrage": [
+    "Cadrage du premier lot : validation de l'ergonomie et figeage du design system avant le développement de la logique métier.",
+    0
+  ],
+  "axe_tab_import": [
+    "Import audio",
+    0
+  ],
+  "axe_tab_paste": [
+    "Coller du texte",
+    0
+  ],
+  "axe_tab_record": [
+    "Enregistrement",
+    0
+  ],
+  "axe_type_asset": [
+    "Document",
+    0
+  ],
+  "axe_type_synthesis": [
+    "Synthèse",
+    0
+  ],
+  "axe_type_transcript": [
+    "Transcript",
+    0
+  ],
+  "back": [
+    "Retour",
+    0
+  ],
+  "btn_generate_synthesis": [
+    "Générer une synthèse",
+    0
+  ],
+  "contributions": [
+    "Contribution",
+    0
+  ],
+  "labelAnalyseSynthesise": [
+    "Analyse & synthèse",
+    0
+  ],
+  "methodTipsAxis": [
+    "Travaillez axe par axe. Pour chaque axe, enregistrez les échanges du groupe, générez un transcript, puis une synthèse orientée. Validez la meilleure version de chaque axe avant de lancer l'analyse finale.",
+    0
+  ],
+  "methodTipsTitle": [
+    "Rappel méthodologique",
+    0
+  ],
+  "save": [
+    "Enregistrer",
+    0
+  ],
+  "synthesis": [
+    "Synthèse",
+    0
+  ]
+}
